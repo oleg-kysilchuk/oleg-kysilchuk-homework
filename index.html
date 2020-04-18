@@ -3,19 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Оглавление</title>
+    <title>Список покупок</title>
+    <style>
+        li {padding-top: 5px}
+        ul>li {list-style: none}
+    </style>
 </head>
 <body>
     <div>
-        <h1>Адреса Интернета</h1>
-        <ol>
-            <li><a href="text.html#p1">Введение</a></li>
-            <li><a href="text.html#p2">Универсальные идентификаторы</a></li>
-            <li><a href="text.html#p3">Три основных класса IP-адресов</a></li>
-            <li><a href="text.html#p4">Адреса описывают сетевые соединения</a></li>
-            <li><a href="text.html#p5">Сетевые и широковещательные адреса</a></li>
-            <li><a href="text.html#p6">Ограниченное широковещание</a></li>
-        </ol>
+        <ul><h1>Список покупок</h1>
+            <li>
+                <ul><b>1.Мясо</b>
+                    <li>
+                        <input type="checkbox" name="beef" id="beef">
+                        <label for="beef">Говядина</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="pork" id="pork">
+                        <label for="pork">Свинина</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="lamb" id="lamb">
+                        <label for="lamb">Баранина</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="poultry" id="poultry">
+                        <label for="poultry">Курица</label>
+                    </li>
+                </ul>
+            </li>
+            
+            <li>
+                <ul><b>2.Овощи</b>
+                    <li>
+                        <input type="checkbox" name="tomatos" id="tomatos">
+                        <label for="tomatos">Помидоры</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="cucumbers" id="cucumbers">
+                        <label for="cucumbers">Огурцы</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="onions" id="onions">
+                        <label for="onions">Лук</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="carrot" id="carrot">
+                        <label for="carrot">Морковь</label>
+                    </li>
+                </ul>
+            </li>
+            
+            <li>
+                <ul><b>3.Фрукты</b>
+                    <li>
+                        <input type="checkbox" name="bananas" id="bananas">
+                        <label for="bananas">Бананы</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="oranges" id="oranges">
+                        <label for="oranges">Апельсины</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="kiwis" id="kiwis">
+                        <label for="kiwis">Киви</label>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="apples" id="apples">
+                        <label for="apples">Яблоки</label>
+                    </li>
+                </ul>
+            </li>   
+        </ul>
     </div>
     
 </body>
