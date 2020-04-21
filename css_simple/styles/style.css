@@ -1,0 +1,45 @@
+
+body {
+    margin: 0 auto;
+    width: 80%;
+    max-width: 780px;
+    font-size: 18px;
+}
+
+.wrapper {
+    background-color: bisque;     /* дав бекграунд щоб було видно відступи */
+    padding: 5px 0px 15px 10px;
+}
+
+.page-header {
+    background-color: #A52A2A;
+    color: #ffffff;
+    text-align: center;
+}
+
+.content {
+    padding-right: 20px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+}
+
+.gallery img {
+    border: 3px dashed #000000;
+    margin-right: 4px;
+    padding-bottom: 5px;
+}
+
+p>a {
+    text-decoration: none;
+}
+
+.page-footer {
+    font-size: 20px;
+    margin-bottom: 10px;
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+}
