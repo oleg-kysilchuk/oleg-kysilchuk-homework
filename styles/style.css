@@ -10,7 +10,6 @@ body {
     flex-direction: column;
     align-items: center; 
     background: #121116 no-repeat center;
-    /* url("/assets/background-cols.png") */
 }
 
 .logo {
