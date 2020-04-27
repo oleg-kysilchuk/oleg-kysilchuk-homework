@@ -41,7 +41,7 @@ li:nth-child(2n) {
     background-color: #7A7593;
 }
 
-li:hover {
+li:hover { 
     background-color: #625E77;
     border-top: 3px solid #ffffff;
     border-bottom: 3px solid #ffffff;
@@ -59,7 +59,7 @@ input[type="checkbox"] {
     vertical-align: middle;
 }
 
-input[type="checkbox"]:checked + div {
+input[type="checkbox"]:checked + label {
     text-decoration: line-through;
     color: rgba(255, 255, 255, 0.7);
 }
