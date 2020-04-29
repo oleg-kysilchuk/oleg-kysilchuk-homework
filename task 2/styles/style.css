@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    padding: 0;
+    max-width: 100vw;
+    max-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1600px;
+    min-height: 1320px;
+    box-sizing: border-box;
+    padding: 100px 220px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-around;
+    background-color: #e2e7ec;
+}
+
+a {
+    text-decoration: none;
+}
+
+.item:hover {
+    box-shadow: 0 0 10px #353030;
+}
+
+.big {
+    margin: 10px;
+    width: 746px;
+    height: 540px;
+    background-image:
+        linear-gradient(to bottom, rgba(209, 191, 191, 0.1), #353030),
+        url("../assets/photo1.jpg");
+    filter: contrast(1.5);
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 4px;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.big .date {
+    display: inline-block;
+    margin: 380px auto 0 50px;
+    font-size: 15px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.big a {
+    display: block;
+    margin: 25px auto 40px 45px;
+    width: 500px;
+    font-size: 32px;
+    font-weight: 900;
+    color: #ffffff;
+    text-shadow: 1px 1px 3px #000000;
+    line-height: 38px;
+    transition: .2s linear;
+}
+
+.big a:hover {
+    transition: .2s linear;
+    transform: scale(1.03);
+    line-height: 1.2;
+}
+
+.small {
+    margin: 10px;
+    width: 360px;
+    height: 540px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    text-transform: uppercase;
+}
+
+.small .preview {
+    width: 100%;
+    height: 250px;
+}
+
+.small .date {
+    display: inline-block;
+    margin: 28px auto 0px 28px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #818181;
+}
+
+.small a:not(.profile) {
+    display: inline-block;
+    margin: 20px 15px 0px 15px;
+    font-size: 22px;
+    font-weight: 900;
+    line-height: 30px;
+    color: #1d1d1d;
+    transition: .2s linear;
+}
+
+.small a:hover:not(.profile) {
+    transition: .2s linear;
+    transform: scale(1.03);
+    line-height: 1.38;
+}
+
+.small .profile {
+    display: inline-block;
+    margin: 50px auto 25px 15px;
+}
+
+.small .user-photo {
+    border-radius: 50%;
+}
