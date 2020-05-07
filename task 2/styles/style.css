@@ -29,7 +29,7 @@ body {
     text-transform: uppercase;
 }
 
-.title:after {
+.title::after {
     content: ' ';
     position: relative;
     top: 25px;
@@ -55,49 +55,50 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    perspective: 1200px;
-}
-
-.item-social {
-    position: relative;
-    width: 269px;
-    height: 268px;
-    margin: 15px;
-    background-color: rgba(0, 174, 217, 0.9);
-    text-align: center;
-    transition: 1s ease;
-}
-
-.item-social:hover {
-    transform: translateY(-20px);
-    transition: 1s ease;
-}
-
-.item-social .icons {
-    margin: 113px auto 113px;
-}
-
-.icons .icon:hover {
-    transform: scale(0.95);
 }
 
 .item {
     position: relative;
-    width: 269px;
-    height: 268px;
     margin: 15px;
-    transition: 1s ease;
+    overflow: hidden;
 }
 
-.item:hover {
-    transform: rotateY(-30deg);
-    transition: 1s ease;
+
+.icons {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(17, 182, 221);
+    opacity: 0.9;
+    width: 269px;
+    height: 268px;
+    transform: translateX(-269px);
+    transition: .6s ease;
+}
+
+.icons > a {
+    margin: 5px;
+}
+
+.item:hover .icons {
+    transform: translateX(0);
+    opacity: 1;
+    transition: .6s ease;
+}
+
+.icon:hover {
+    transform: scale(0.92);
+    transition: .2s linear;
+}
+
+.icon {
+    transition: .2s linear;
 }
 
 .name {
-    position: absolute;
-    top: 290px;
-    left: 0;
     width: 117px;
     font-size: 14px;
     font-weight: 300;
