@@ -4,70 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-----Fonts----->
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <!-----Styles---->
     <link href="styles/style.css" rel="stylesheet">
-    <title>Who We Are</title>
+    <title>Sign in</title>
 </head>
 <body>
+
     <div class="container">
-        
-        <h1 class="title">who we are</h1>
-        <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+       
+        <a href="#" class="sign">Sign in</a>
+        <a href="#" class="join">Join us</a>
 
-        <div class="item-container">
+        <form class="sign-form" id="sign-in" action="#" method="GET">
 
-            <div class="item">
-                    <img src="./assets/image.jpg" alt="photo">
-                    <p class="name"><span>John Handson</span> Lead Designer</p>
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" required>
 
-                <div class="icons">
-                    <a href="#"><img class="icon" src="./assets/Twitter.png" alt="twitter"></a>
-                    <a href="#"><img class="icon" src="./assets/facebook.png" alt="facebook"></a>
-                    <a href="#"><img class="icon" src="./assets/google.png" alt="google+"></a>
-                </div>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+            
+            <input class="keep-me" id="checkbox" type="checkbox" name="keep" checked>
+            <label class="check" for="checkbox">Keep me signed in</label>
 
-            </div>
+            <button class="sign-in-btn" type="submit" form="sign-in">Sign in</button>
 
-            <div class="item">
-                    <img src="./assets/image1.jpg" alt="photo">
-                    <p class="name"><span>Alex Cutter</span> Developer</p>
+        </form>
 
-                <div class="icons">
-                    <a href="#"><img class="icon" src="./assets/Twitter.png" alt="twitter"></a>
-                    <a href="#"><img class="icon" src="./assets/facebook.png" alt="facebook"></a>
-                    <a href="#"><img class="icon" src="./assets/google.png" alt="google+"></a>
-                </div>
+        <a href="#" class="pass-restore">Forgot password</a>
+        <a href="#" class="create-acc">Create an account</a>
 
-            </div>
-
-            <div class="item">
-                    <img src="./assets/image2.jpg" alt="photo">
-                    <p class="name"><span>Elena Simpson</span> Artist</p>
-
-                <div class="icons">
-                    <a href="#"><img class="icon" src="./assets/Twitter.png" alt="twitter"></a>
-                    <a href="#"><img class="icon" src="./assets/facebook.png" alt="facebook"></a>
-                    <a href="#"><img class="icon" src="./assets/google.png" alt="google+"></a>
-                </div>
-
-            </div>
-
-            <div class="item">
-
-                    <img src="./assets/image3.jpg" alt="photo">
-                    <p class="name"><span>Lily Allen</span> Graphic Designer</p>
-
-                <div class="icons">
-                    <a href="#"><img class="icon" src="./assets/Twitter.png" alt="twitter"></a>
-                    <a href="#"><img class="icon" src="./assets/facebook.png" alt="facebook"></a>
-                    <a href="#"><img class="icon" src="./assets/google.png" alt="google+"></a>
-                </div>
-                
-            </div>
-
-        </div>
- 
     </div>
 
 </body>

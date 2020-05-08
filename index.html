@@ -4,50 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-----Fonts----->
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:wght@300;400;700&display=swap" rel="stylesheet">
     <!-----Styles---->
     <link href="styles/style.css" rel="stylesheet">
-    <title>Blog</title>
+    <title>Cahee</title>
 </head>
 <body>
 
-    <div class="container">
-        
-        <h1 class="title">Blog&#8221;</h1>
-        <p class="description">Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
+    <footer class="page-footer">
 
-        <div class="item-container">
+        <section class="form-section">
+            
+            <h5 class="contact">Contact</h5>
+            <p class="description">For new projects, ideas, business or anything
+                you'd like to discuss, contact with me!</p>
 
-            <div class="item">
-                <a href="#">
-                    <div class="date"><span>20 </span>nov</div>
-                    <img src="./assets/image1.jpg" alt="article image">
-                    <p class="block-title">Green Smoothies: Too Much of a Good Thing? </p>
-                    <span class="pub-date">By Auskteez - 2 hours ago</span>
-                </a>
+            <div class="container">
+
+                <div class="item form-block">
+
+                    <form id="contact" action="#" method="GET">
+
+                        <input type="text" name="user-name" placeholder="Your name..."  required>
+
+                        <input type="email" name="user-email" placeholder="Your email..." required>
+
+                        <input type="tel" name="phone-number" placeholder="Your phone number..." pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+
+                        <textarea name="message" placeholder="Your message..." required></textarea>
+
+                        <button type="submit" form="contact" >Submit</button>
+
+                    </form>
+
+                </div>
+
+                <div class="item information">
+                    <ul>
+                        <li class="address">
+                            <span class="bolder-text">address</span>
+                            123 City name, Street, City, Country
+                        </li>
+
+                        <li class="email">
+                            <span class="bolder-text">email</span>
+                            cahee@domain.com
+                        </li>
+
+                        <li class="phone">
+                            <span class="bolder-text">phone</span>
+                            +012 345 6789
+                        </li>
+                    </ul>
+                </div>
+
             </div>
-            <div class="item">
-                <a href="#">
-                    <div class="date"><span>14 </span>nov</div>
-                    <img src="./assets/image2.jpg" alt="article image">
-                    <p class="block-title">Growing Food and a “Thirst” for Innovation</p>
-                    <span class="pub-date">By Auskteez - 3 hours ago</span>
-                </a>
-            </div>
-            <div class="item">
-                <a href="#">
-                    <div class="date"><span>10 </span>nov</div>
-                    <img src="./assets/image3.jpg" alt="article image">
-                    <p class="block-title">Pesticides & Food: What You Need to Know</p>
-                    <span class="pub-date">By Auskteez - 6 hours ago</span>
-                </a>
-            </div>
+        </section>
+
+        <div class="copyright">
+
+            <span class="rights">&#169; 2015 Company. All right reserved.</span>
+
+            <span class="logo">Cahee</span>
+
+            <span class="author">Made with <span>love</span> by Auskteez</span>
 
         </div>
 
-        <button class="more" title="next homework" onclick="window.location.href = '../task 2/task2.html';">view more</button>
-
-    </div>
+    </footer>
 
 </body>
 </html>
