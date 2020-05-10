@@ -73,10 +73,9 @@ body {
 }
 
 .form-block textarea {
-    min-height: 250px;
-    max-width: 500px;
-    min-width: 100%;
-    max-height: 250px;
+    width: 500px;
+    height: 250px;
+    resize: none;
     padding-top: 15px;
     padding-right: 10px;
 }

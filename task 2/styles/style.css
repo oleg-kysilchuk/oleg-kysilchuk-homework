@@ -19,32 +19,46 @@ body {
     box-shadow: 0px 10px 40px #14293e;
 }
 
-.sign,
-.join {
+.container input[type="radio"] {
+    display: none;
+}
+
+.container input[type="radio"]+label {
     margin-right: 25px;
     padding-bottom: 3px;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 600;
     letter-spacing: 1px;
     color: #e1c2f1;
     text-decoration: none;
 }
 
-.sign:hover,
-.join:hover {
+.container input[type="radio"]+label:hover {
     color: #ffffff;
     border-bottom: 2px solid #e66a64;
 }
 
-.sign:focus,
-.join:focus {
-    outline: none;
-    border-bottom: 2px solid #e66a64;
+.sign-radio:checked ~ .sign-form,
+.sign-radio:checked a {
+    display: block;
 }
 
-.sign-form label{
+.sign-radio:checked~.join-form {
+    display: none;
+}
+
+.join-radio:checked ~ .sign-form,
+.join-radio:checked ~ a {
+    display: none;
+}
+
+.join-radio:checked~.join-form {
+    display: block;
+}
+
+.sign-form label {
     display: inline-block;
-    margin-top: 50px;
+    margin-top: 40px;
     font-size: 15px;
     font-weight: 600;
     letter-spacing: 1px;
@@ -67,7 +81,11 @@ body {
     text-align: left;
     background: none;
     outline: none;
-    border: 2px solid rgba(162, 136, 201, 6);
+    border: 2px solid rgba(162, 136, 201, 0.6);
+}
+
+.sign-form input:valid {
+    background-color: rgba(123, 223, 75, 0.5);
 }
 
 .sign-form input:focus {
@@ -98,8 +116,8 @@ body {
 
 .sign-form .keep-me:not(:checked) ~ .check::before {
     content:"✖";
-    padding-right: 1px;
-    margin-right: 7.9px;
+    padding-right: 2px;
+    margin-right: 7px;
     color: red;
 }
 
@@ -122,6 +140,73 @@ body {
 }
 
 .sign-form .sign-in-btn:focus {
+    outline: none;
+    border: 1px solid #e66a64;
+}
+
+.join-form {
+    display: none;
+}
+
+.join-form label {
+    display: inline-block;
+    margin-top: 40px;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fbf6e4;
+    text-align: left;
+}
+
+.join-form label:nth-of-type(2),
+.join-form label:nth-of-type(3) {
+    margin-top: 20px;
+}
+
+.join-form input {
+    margin-top: 10px;
+    margin-bottom: 0;
+    padding-left: 10px;
+    width: 260px;
+    height: 40px;
+    font-size: 14px;
+    color: #fbf6e4;
+    text-align: left;
+    background: none;
+    outline: none;
+    border: 2px solid rgba(162, 136, 201, 0.6);
+}
+
+.join-form input:valid {
+    background-color: rgba(123, 223, 75, 0.5);
+}
+
+.join-form input:focus {
+    font-size: 14px;
+    font-weight: 300;
+    color: #fbf6e4;
+    border: 2px solid #e66a64;
+}
+
+.join-form .join-us-btn {
+    margin: 40px auto 30px;
+    width: 260px;
+    height: 40px;
+    font-family: 'Quicksand', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #ffffff;
+    border: none;
+    background-color: #23ae92;
+}
+
+.join-form .join-us-btn:active {
+    background-color: #B468D4;
+    color: #23ae92;
+}
+
+.join-form .join-us-btn:focus {
     outline: none;
     border: 1px solid #e66a64;
 }

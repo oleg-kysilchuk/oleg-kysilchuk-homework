@@ -13,21 +13,39 @@
 
     <div class="container">
        
-        <a href="#" class="sign">Sign in</a>
-        <a href="#" class="join">Join us</a>
+        <input class="sign-radio" type="radio" id="sign" name="login" value="sign" checked>
+        <label for="sign">Sign in</label>
 
+        <input class="join-radio" type="radio" id="join" name="login" value="join">
+        <label for="join">Join us</label>
+        
         <form class="sign-form" id="sign-in" action="#" method="GET">
 
             <label for="username">Username</label>
-            <input type="text" id="username" name="username" required>
+            <input type="text" id="username" name="username" minlength="10" required>
 
             <label for="password">Password</label>
-            <input type="password" id="password" name="password" required>
+            <input type="password" id="password" name="password" minlength="10" required>
             
             <input class="keep-me" id="checkbox" type="checkbox" name="keep" checked>
             <label class="check" for="checkbox">Keep me signed in</label>
 
             <button class="sign-in-btn" type="submit" form="sign-in">Sign in</button>
+
+        </form>
+
+        <form class="join-form" id="join-us" action="#" method="GET">
+
+            <label for="username">Username</label>
+            <input type="text" id="-joinusername" name="join-username" minlength="10" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="join-password" name="join-password" minlength="10" required>
+
+            <label for="password-repeat">Repeat password</label>
+            <input type="password" id="password-repeat" name="join-password" minlength="10" required>
+
+            <button class="join-us-btn" type="submit" form="join-us">Join us</button>
 
         </form>
 
