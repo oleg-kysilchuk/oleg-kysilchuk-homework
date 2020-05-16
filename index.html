@@ -1,276 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-----Fonts------>
-    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:wght@100;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <!-----Icon Font-->
-    <link rel="stylesheet" href="https://i.icomoon.io/public/temp/0ab341f096/UntitledProject/style.css">
+    <link href="//db.onlinewebfonts.com/c/cf2e520b1f09b1054a329a50e225ac01?family=Museo+Sans+Rounded+100" rel="stylesheet" type="text/css"/>
     <!-----Styles----->
-    <link href="styles/style.css" rel="stylesheet">
-    <title>Cahee</title>
-</head>
-<body>
+    <link href="/scss/style.css" rel="stylesheet" />
+    <title>NIKE-SB</title>
+  </head>
+  <body>
 
     <div class="container">
 
+      <section class="container__content">
 
 
-        <header id="home" class="page-header">
+        <div class="container__content__logo">
+          <img src="./assets/logo.png" alt="nike-logo" />
+        </div>
 
-            <div class="header-logo">
-                <p>Cahee</p>
-            </div>
 
-            <nav class="menu">
-                <ul>
-                    <li><a href="#home">home</a></li>
-                    <li><a href="#about-page">about</a></li>
-                    <li><a href="#our-services">services</a></li>
-                    <li><a href="#gallery-page">gallery</a></li>
-                    <li><a href="#blog">blog</a></li>
-                    <li><a href="#contact-section">contact</a></li>
-                </ul>
-            </nav>
+        <div class="container__content__item container__content__item-preview">
 
+          <img class="container__content__item-preview__good-picture" src="./assets/Nike.png" alt="nike-preview" />
 
-            <div class="header-title">
-                <h1>fresh life</h1>
-                <p class="header-description">
-                    Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
-                </p>
+          <div class="container__content__item-preview__colorpicker">
 
-                <a class="get-free" href="#">get free now</a>
-            </div>
+            <input class="container__content__item-preview__colorpicker__color" id="black" form="specification" type="radio" name="color" value="black"  checked/>
+            <label for="black"></label>
 
-            <div class="scroll">
-                <img src="/assets/scroll.png">
-            </div>
+            <input class="container__content__item-preview__colorpicker__color" id="white" form="specification" type="radio" name="color" value="white"/>
+            <label for="white"></label>
 
-        </header>
+            <input class="container__content__item-preview__colorpicker__color" id="red" form="specification" type="radio" name="color" value="red"/>
+            <label for="red"></label>
 
+            <input class="container__content__item-preview__colorpicker__color" id="green" form="specification" type="radio" name="color" value="green"/>
+            <label for="green"></label>
 
+          </div>
 
-        <section id="about-page" class="about-us">
+        </div>
 
-            <div class="about">
-                <h2 class="about-title">about us</h2>
 
-                <p class="about-description">
-                    Abore Cahee magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.
-                </p>
+        <div class="container__content__item container__content__item-order">
 
-                <p class="about-description">
-                    Nim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore.
-                </p>
-            </div>
+          <h2 class="container__content__item-order__title">Nike SB Stefan Janoski Max</h2>
 
-        </section>
+          <p class="container__content__item-order__sub-title">Unisex Skateboarding Shoe</p>
 
 
+          <form class="container__content__item-order__order-form" id="specification" action="#" method="GET">
 
-        <section id="our-services" class="services-container">
+            <select class="size" name="size" id="size" required>
+              <option selected>Size</option>
+              <option value="40">40</option>
+              <option value="42">42</option>
+              <option value="44">44</option>
+              <option value="46">46</option>
+            </select>
 
-            <div class="services">
+            <select class="quantity" name="quantity" id="quantity" required>
+              <option selected>Qty</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
 
-                <ul>
-                    <li>
-                        <a class="service" href="#">
-                            <p>online shopping</p>
-                            <span class="icon icon-cart"></span>
-                        </a>
-                    </li>
+            <button class="order-btn" type="submit" form="specification">Add to cart</button>
 
-                    <li>
-                        <a class="service" href="#">
-                            <p>quality product</p>
-                            <span class="icon icon-hand"></span>
-                        </a>
-                    </li>
+          </form>
 
-                    <li>
-                        <a class="service" href="#">
-                            <p>domestic & international delivery</p>
-                            <span class="icon icon-globe"></span>
-                        </a>
-                    </li>
+        </div>
 
-                    <li>
-                        <a class="service" href="#">
-                            <p>well organized</p>
-                            <span class="icon icon-carrot"></span>
-                        </a>
-                    </li>
-
-                </ul>
-
-            </div>
-
-            <div class="section-title">
-                <h2 class="services-title">our services</h2>
-            </div>
-
-        </section>
-
-
-
-        <section id="gallery-page" class="gallery">
-
-            <h2 class="gallery-title">gallery</h2>
-            <p class="gallery-description">
-                Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </p>
-
-            <div class="gallery-items">
-                <div class="gallery-item block-1">
-                    <a href=""><img src="/assets/gallery-img1.jpg" alt="img1"></a>
-                </div>
-
-                <div class="gallery-item block-4">
-                    <a href=""><img src="/assets/gallery-img4.jpg" alt="img4"></a>
-                </div>
-
-                <div class="gallery-item block-2">
-                    <a href=""><img src="/assets/gallery-img2.jpg" alt="img2"></a>
-                </div>
-
-                <div class="gallery-item block-3">
-                    <a href=""><img src="/assets/gallery-img3.jpg" alt="img3"></a>
-                </div>
-
-                <div class="gallery-item block-5">
-                    <a href=""><img src="/assets/gallery-img5.jpg" alt="img5"></a>
-                </div>
-            </div>
-
-            <button class="gallery-more" type="button">view more</button>
-
-        </section>
-
-
-
-        <section class="subscription">
-
-            <div class="subscr-container">
-                <h3 class="subscribtion-title">subscribe to us</h3>
-                <p class="subscription-description">
-                    Dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-                </p>
-
-                <form class="sub-form" id="subscription-form" action="#" method="GET">
-                    <input type="email" name="subsc-email" placeholder="Your email address..." required>
-                    <button class="subscribe" type="submit" form="subscription-form">subscribe</button>
-                </form>
-            </div>
-
-        </section>
-
-
-
-        <section id="blog" class="blog-container">
-            
-            <h2 class="blog-title">Blog</h2>
-            <p class="blog-description">Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit.</p>
-
-            <div class="item-container">
-
-                <div class="item-blog">
-                    <a href="#">
-                        <div class="date"><span>20 </span>nov</div>
-                        <img src="./assets/image1.jpg" alt="article image">
-                        <p class="block-title">Green Smoothies: Too Much of a Good Thing? </p>
-                        <span class="pub-date">By Auskteez - 2 hours ago</span>
-                    </a>
-                </div>
-                <div class="item-blog">
-                    <a href="#">
-                        <div class="date"><span>14 </span>nov</div>
-                        <img src="./assets/image2.jpg" alt="article image">
-                        <p class="block-title">Growing Food and a “Thirst” for Innovation</p>
-                        <span class="pub-date">By Auskteez - 3 hours ago</span>
-                    </a>
-                </div>
-                <div class="item-blog">
-                    <a href="#">
-                        <div class="date"><span>10 </span>nov</div>
-                        <img src="./assets/image3.jpg" alt="article image">
-                        <p class="block-title">Pesticides & Food: What You Need to Know</p>
-                        <span class="pub-date">By Auskteez - 6 hours ago</span>
-                    </a>
-                </div>
-
-            </div>
-
-            <button class="more" title="next homework" >view more</button>
-
-        </section>
-
-
-
-        <footer id="contact-section" class="page-footer">
-
-            <section class="form-section">
-                
-                <h2 class="contact-title">Contact</h2>
-                <p class="contact-description">For new projects, ideas, business or anything
-                    you'd like to discuss, contact with me!</p>
-
-                <div class="form-container">
-
-                    <div class="form-block">
-
-                        <form id="contact" action="#" method="GET">
-
-                            <input type="text" name="user-name" placeholder="Your name..."  required>
-
-                            <input type="email" name="user-email" placeholder="Your email..." required>
-
-                            <input type="tel" name="phone-number" placeholder="Your phone number..." pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
-
-                            <textarea name="message" placeholder="Your message..." required></textarea>
-
-                            <button class="form-button" type="submit" form="contact" >Submit</button>
-
-                        </form>
-
-                    </div>
-
-                    <div class="information">
-                        <ul>
-                            <li class="address">
-                                <span class="bolder-text">address</span>
-                                123 City name, Street, City, Country
-                            </li>
-
-                            <li class="email">
-                                <span class="bolder-text">email</span>
-                                cahee@domain.com
-                            </li>
-
-                            <li class="phone">
-                                <span class="bolder-text">phone</span>
-                                +012 345 6789
-                            </li>
-                        </ul>
-                    </div>
-
-                </div>
-            </section>
-
-            <div class="copyright">
-
-                <span class="rights">&#169; 2015 Company. All right reserved.</span>
-
-                <span class="logo">Cahee</span>
-
-                <span class="author">Made with <span class="crimson">love</span> by Auskteez</span>
-
-            </div>
-
-        </footer>
+      </section>
 
     </div>
-
-</body>
+  </body>
 </html>
