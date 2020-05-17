@@ -96,7 +96,7 @@ li:nth-of-type(3) p::after {
     width: 550px;
     height: 520px;
     text-align: left;
-    background: url("/assets/tomatoes.png") center no-repeat;
+    background: url("../assets/tomatoes.png") center no-repeat;
 }
 
 .section-title .services-title {
