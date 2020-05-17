@@ -370,136 +370,156 @@
     padding-top: 110px;
     width: 800px;
     height: 600px;
-    background: url("/assets/bg-main.jpg") no-repeat;
+    background: url("../assets/bg-main.jpg") no-repeat;
+}
 
-    &__content {
-        position: relative;
-        display: flex;
-        margin: 0px auto;
-        font-family: "Museo Sans Rounded 100";
-        text-align: center;
-        width: 680px;
-        height: 390px;
-        background-color: #111a28;
-        border-radius: 15px;
-        box-shadow: 0px 0px 25px#111a28;
+.content {
+    position: relative;
+    display: flex;
+    margin: 0px auto;
+    font-family: "Museo Sans Rounded 100";
+    text-align: center;
+    width: 680px;
+    height: 390px;
+    background-color: #111a28;
+    border-radius: 15px;
+    box-shadow: 0px 0px 25px#111a28;
 
-        &__logo {
-            position: absolute;
-            display: block;
-            top: 25px;
-            left: 20px;
-        }
 
-        &__item {
-            margin-top: 50px;
-            width: 440px;
-        }
+    &__logo {
+      position: absolute;
+      display: block;
+      top: 25px;
+      left: 20px;
+  }
 
-        &__item-preview {
-            margin-top: 130px;
+  &__item {
+      margin-top: 50px;
+      width: 440px;
+  }
 
-            &__good-picture {
-                margin: 0 0 55px 35px;
+  &__item-preview {
+      margin-top: 130px;
+  }
 
-                &:hover {
-                    transform: scale(1.05);
-                }
-            }
+  &__good-picture {
+    margin: 0 0 55px 35px;
 
-            &__colorpicker {
-                margin: 0;
-                margin-bottom: 30px;
+    &:hover {
+        transform: scale(1.05);
+    }
+  }
 
-                &__color {
-                    opacity: 0;
-                    width: 0;
-    
-                    &:checked + label {
-                        width: 11px;
-                        height: 11px;
-                        border: 2px solid #7c8189;
-                    }
-                }
-    
-    
-                label {
-                    display: inline-block;
-                    width: 10px;
-                    height: 10px;
-                    border-radius: 50%;
-                    background-color: #1f273f;
-                    cursor: pointer;
-                }
-    
-                label:nth-of-type(2) {
-                    background-color: #ffffff;
-                }
-    
-                label:nth-of-type(3) {
-                    background-color: #ed3333;
-                }
-    
-                label:nth-last-of-type(1) {
-                    background-color: #29e3ea;
-                }
-            }
-        }
+  &__colorpick {
+    margin-bottom: 30px;
 
-        &__item-order {
-            text-align: left;
-            width: 240px;
+    &__color {
+        display: none;
 
-            &__title {
-                margin-bottom: 10px;
-                width: 155px;
-                font-size: 24px;
-                line-height: 26px;
-                font-weight: 100;
-                color: rgba($color: #e1e1e1, $alpha: 0.8);
-            }
-
-            &__sub-title {
-                margin-top: 0;
-                margin-bottom: 65px;
-                font-size: 14px;
-                line-height: 26px;
-                font-weight: 100;
-                color: rgba($color: #e1e1e1, $alpha: 0.7);
-            }
-
-            &__order-form {
-                font-size: 14px;
-                line-height: 18px;
-                font-weight: 100;
-                
-
-                select {
-                    margin-bottom: 30px;
-                    padding: 2px 0px 0px 7px ;
-                    width: 68px;
-                    height: 32px;
-                    color: rgba($color: #e1e1e1, $alpha: 0.5);
-                    background-color: #111a28;
-                    border: 1px solid rgba($color: #e1e1e1, $alpha: 0.5);
-                    outline: none;
-                    cursor: pointer;
-                }
-
-                .order-btn {
-                    width: 180px;
-                    height: 38px;
-                    color: rgba($color: #e1e1e1, $alpha: 0.5);
-                    background-color: #111a28;
-                    border: 1px solid rgba($color: #e1e1e1, $alpha: 0.5);
-                    outline: none;
-                    cursor: pointer;  
-                    
-                    &:hover {
-                        background-color: rgba($color: #e1e1e1, $alpha: 0.3);
-                    }
-                }
-            }
+        &:checked + .coloring {
+            width: 11px;
+            height: 11px;
+            border: 2px solid #7c8189;
         }
     }
+
+    &__coloring {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: #1f273f;
+      cursor: pointer;
+    }
+
+  &__coloring:nth-of-type(2) {
+      background-color: #ffffff;
+    }
+
+  &__coloring:nth-of-type(3) {
+      background-color: #ed3333;
+    }
+
+  &__coloring:nth-last-of-type(1) {
+      background-color: #29e3ea;
+    }   
+  }
+
+
+
+  &__item-order {
+    text-align: left;
+    width: 240px;
+    }
+
+    &__title {
+      margin-bottom: 10px;
+      width: 155px;
+      font-size: 24px;
+      line-height: 28px;
+      font-weight: 100;
+      color: rgba($color: #e1e1e1, $alpha: 0.8);
+  }
+
+  &__sub-title {
+      margin-top: 0;
+      margin-bottom: 20px;
+      font-size: 14px;
+      line-height: 26px;
+      font-weight: 100;
+      color: rgba($color: #e1e1e1, $alpha: 0.7);
+  }
+
+  &__rating {
+    margin-bottom: 25px;
+    transform: scale(-1, 1);
+    float: left;
+    margin-right: 100px;
+
+    &__star {
+      display: none;
+
+      &:checked ~ label {
+        color: gold;
+      }
+    }
+
+    &__rate {
+      color: #ececec;
+      font-size: 10px;
+    }
+  }
+
+  &__order-form {
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 100;
+    
+
+    &__selection {
+        margin-bottom: 30px;
+        padding-left: 7px;
+        width: 68px;
+        height: 32px;
+        color: rgba($color: #e1e1e1, $alpha: 0.5);
+        background-color: #111a28;
+        border: 1px solid rgba($color: #e1e1e1, $alpha: 0.5);
+        outline: none;
+        cursor: pointer;
+    }
+
+    &__btn {
+        width: 180px;
+        height: 38px;
+        color: rgba($color: #e1e1e1, $alpha: 0.5);
+        background-color: #111a28;
+        border: 1px solid rgba($color: #e1e1e1, $alpha: 0.5);
+        outline: none;
+        cursor: pointer;  
+        
+        &:hover {
+            background-color: rgba($color: #e1e1e1, $alpha: 0.3);
+        }
+    }
+  }
 }

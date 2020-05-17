@@ -13,47 +13,66 @@
 
     <div class="container">
 
-      <section class="container__content">
+      <section class="content">
 
 
-        <div class="container__content__logo">
+        <div class="content__logo">
           <img src="./assets/logo.png" alt="nike-logo" />
         </div>
 
 
-        <div class="container__content__item container__content__item-preview">
+        <div class="content__item content__item-preview">
 
-          <img class="container__content__item-preview__good-picture" src="./assets/Nike.png" alt="nike-preview" />
+          <img class="content__good-picture" src="./assets/Nike.png" alt="nike-preview" />
 
-          <div class="container__content__item-preview__colorpicker">
+          <div class="content__colorpick">
 
-            <input class="container__content__item-preview__colorpicker__color" id="black" form="specification" type="radio" name="color" value="black"  checked/>
-            <label for="black"></label>
+            <input class="content__colorpick__color" id="black" form="specification" type="radio" name="color" value="black"  checked/>
+            <label class="content__colorpick__coloring coloring" for="black"></label>
 
-            <input class="container__content__item-preview__colorpicker__color" id="white" form="specification" type="radio" name="color" value="white"/>
-            <label for="white"></label>
+            <input  class="content__colorpick__color" id="white" form="specification" type="radio" name="color" value="white"/>
+            <label class="content__colorpick__coloring coloring" for="white"></label>
 
-            <input class="container__content__item-preview__colorpicker__color" id="red" form="specification" type="radio" name="color" value="red"/>
-            <label for="red"></label>
+            <input class="content__colorpick__color" id="red" form="specification" type="radio" name="color" value="red"/>
+            <label class="content__colorpick__coloring coloring" for="red"></label>
 
-            <input class="container__content__item-preview__colorpicker__color" id="green" form="specification" type="radio" name="color" value="green"/>
-            <label for="green"></label>
+            <input class="content__colorpick__color" id="green" form="specification" type="radio" name="color" value="green"/>
+            <label class="content__colorpick__coloring coloring" for="green"></label>
 
           </div>
 
         </div>
 
 
-        <div class="container__content__item container__content__item-order">
+        <div class="content__item content__item-order">
 
-          <h2 class="container__content__item-order__title">Nike SB Stefan Janoski Max</h2>
+          <h2 class="content__title">Nike SB Stefan Janoski Max</h2>
 
-          <p class="container__content__item-order__sub-title">Unisex Skateboarding Shoe</p>
+          <p class="content__sub-title">Unisex Skateboarding Shoe</p>
+
+          <form action="#" method="GET" id="rating-form" class="content__rating">
+
+            <input class="content__rating__star" type="radio" name="rate" id="5st">
+            <label class="content__rating__rate" for="5st"><i class="fas fa-star"></i></label>
+
+            <input class="content__rating__star" type="radio" name="rate" id="4st">
+            <label class="content__rating__rate" for="4st"><i class="fas fa-star"></i></label>
+
+            <input class="content__rating__star" type="radio" name="rate" id="3st" checked>
+            <label class="content__rating__rate" for="3st"><i class="fas fa-star"></i></label>
+
+            <input class="content__rating__star" type="radio" name="rate" id="2st">
+            <label class="content__rating__rate" for="2st"><i class="fas fa-star"></i></label>
+
+            <input class="content__rating__star" type="radio" name="rate" id="1st">
+            <label class="content__rating__rate" for="1st"><i class="fas fa-star"></i></label>
 
 
-          <form class="container__content__item-order__order-form" id="specification" action="#" method="GET">
+          </form>
 
-            <select class="size" name="size" id="size" required>
+          <form class="content__order-form" id="specification" action="#" method="GET">
+
+            <select class="content__order-form__selection" name="size" id="size" required>
               <option selected>Size</option>
               <option value="40">40</option>
               <option value="42">42</option>
@@ -61,7 +80,7 @@
               <option value="46">46</option>
             </select>
 
-            <select class="quantity" name="quantity" id="quantity" required>
+            <select class="content__order-form__selection" name="quantity" id="quantity" required>
               <option selected>Qty</option>
               <option value="1">1</option>
               <option value="2">2</option>
@@ -70,7 +89,7 @@
               <option value="5">5</option>
             </select>
 
-            <button class="order-btn" type="submit" form="specification">Add to cart</button>
+            <button class="content__order-form__btn" type="submit" form="specification">Add to cart</button>
 
           </form>
 
@@ -79,5 +98,8 @@
       </section>
 
     </div>
+
+    <!-------Font Awesome------->
+    <script src="https://kit.fontawesome.com/2f5f85827b.js" crossorigin="anonymous"></script>
   </body>
 </html>
