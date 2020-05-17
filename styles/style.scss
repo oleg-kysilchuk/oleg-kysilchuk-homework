@@ -26,7 +26,7 @@ body {
 .page-header {
     padding-top: 60px;
     height: 1000px;
-    background: url("/assets/header-bg.jpg") no-repeat center;
+    background: url("../assets/header-bg.jpg") no-repeat center;
 
     .header-logo {
         float: left;
@@ -45,7 +45,7 @@ body {
         list-style: none;
         position: fixed;
         top: 45px;
-        right: 125px;
+        right: 20%;
 
 
 
@@ -135,7 +135,7 @@ body {
 .about-us {
     padding-top: 180px;
     height: 700px;
-    background: #00b2b2 url("/assets/about-bg.png") no-repeat 15% 70%;
+    background: #00b2b2 url("../assets/about-bg.png") no-repeat 15% 70%;
 
 
     .about {
@@ -260,7 +260,7 @@ body {
         width: 550px;
         height: 520px;
         text-align: left;
-        background: url("/assets/tomatoes.png") center no-repeat;
+        background: url("../assets/tomatoes.png") center no-repeat;
     
     
     
@@ -383,7 +383,7 @@ body {
 .subscription {
     padding-top: 145px;
     height: 500px;
-    background: url("/assets/subscribe-bg.jpg") no-repeat;
+    background: url("../assets/subscribe-bg.jpg") no-repeat;
 
 
     .subscr-container {
@@ -624,7 +624,7 @@ body {
 
     .form-section {
         padding-top: 80px;
-        background: url("/assets/bg.jpg") no-repeat center;
+        background: url("../assets/bg.jpg") no-repeat center;
         text-align: center;
 
 
