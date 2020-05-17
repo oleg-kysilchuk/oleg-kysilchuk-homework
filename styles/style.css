@@ -19,7 +19,7 @@ body {
 
 .form-section {
     padding-top: 80px;
-    background: url("/assets/bg.jpg") no-repeat center;
+    background: url("../assets/bg.jpg") no-repeat center;
 }
 
 .contact {
