@@ -463,7 +463,7 @@ template {
   -webkit-transform: scale(-1, 1);
           transform: scale(-1, 1);
   float: left;
-  margin-right: 100px;
+  margin-right: 120px;
 }
 
 .content__rating__star {
