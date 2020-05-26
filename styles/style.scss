@@ -1,7 +1,8 @@
 @import "_reset";
-@import "variables";
-@import "mixins";
 @import "_responsive";
+@import "_variables";
+@import "_mixins";
+
 
 * {
     margin: 0;
@@ -17,6 +18,8 @@ body {
     .container {
         margin: 0 auto;
         max-width: 1500px;
+        position: relative;
+        overflow: hidden;
     }
 }
 
@@ -26,7 +29,7 @@ body {
 /* ------------------HEADER---------------- */
 
 .page-header {
-    padding-top: 7vh;
+    padding-top: 0.1px;
     height: 100vh;
     background: url("../assets/header-bg.jpg") no-repeat center;
 
@@ -48,51 +51,143 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    position: fixed;
+    background-color: rgba(182, 194, 193, 0.6);
+    padding-top: 15px;
+    width: 100%;
+    max-width: 1500px;
+    height: 80px;
 }
 
 .header-logo {
-    @include CursiveFont();
+    @include CursiveFont;
     font-size: 50px;
     line-height: 1;
     color: $main_color;
     margin-left: 10vw;
 }
 
+.menu-btn {
+    width: 42px;
+    height: 42px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 100;
 
-.menu {
-    margin-top: 2vh;
-
-    &__nav-link {
-        padding-top: 5px;
-        display: inline-block;
-        margin-right: 35px;
-        font-size: 16px;
-        font-weight: bold;
-        color: $main_color;
-        line-height: 25px;
-        text-transform: uppercase;
-
-
-        &:hover {
-            padding-top: 3px;
-            border-top: 2px solid #ff6033;
+    &__burger {
+        background-color: #ff6033;
+		border-radius: 1px;
+		height: 5px;
+		width: 100%;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		margin: -5px 0 0 -22px;
+        transition: height 0.1s;
+        
+        &:after,
+        &:before {
+			content: '';
+			background-color: #ff6033;
+			border-radius: 1px;
+			height: 5px;
+			width: 100%;
+			position: absolute;
+			left: 50%;
+			margin-left: -21px;
+			transition: all 0.2s;
+        }
+        
+		&:after {
+			top: -11px;
+        }
+        
+		&:before {
+			bottom: -11px;
         }
     }
 
-
-    @include mobile {
-        display: none;
+    &.open {
+        & span {
+            height: 0;
+            
+            &:after,
+            &:before {
+				background-color: #ff6033;
+				top: 1px;
+            }
+            
+			&:after {
+				transform: rotate(45deg);
+            }
+            
+			&:before {
+				transform: rotate(-45deg);
+			}
+		}
     }
-
-    @include mobile-w {
-        display: none;
-    }
-    
-    @include tablet {
-        display: none;
-    }
-    
 }
+
+
+.menu {
+	background-color: rgba(78, 70, 70, 0.75);
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 99;
+    height: 100vh;
+    max-width: 1500px;
+	width: 100vw;
+	display: table;
+	text-align: center;
+	transition: all 0.3s linear;
+    transform: scale(0);
+    
+	&.open {
+		opacity: 1;
+        transform: scale(1);
+        
+		ul li {
+		opacity: 1;
+		transform: translateX(0);
+	    }
+    }
+    
+	&__list {
+		display: table-cell;
+		vertical-align: middle;
+    }
+    
+	&__item {
+		padding: 8px 0;
+		transition: all 0.7s;
+        opacity: 0;
+        
+		&:nth-child(odd) {
+			transform: translateX(30%);
+        }
+        
+		&:nth-child(even) {
+			transform: translateX(-30%);
+        }
+        
+		&:last-child {
+			transform: none;
+		}
+    }
+    
+	&__nav-link {
+        margin: 10px auto;
+		color: #ff6033;
+		display: inline-block;
+        font-size: 25px;
+        text-transform: uppercase;
+	}
+
+}
+
+
 
 
 
@@ -1113,7 +1208,7 @@ body {
         width: 100%;
         height: 100%;
         display: inline-block;
-        background: linear-gradient(to bottom, rgba(255,255,255,0.05) 50%, rgba(0, 0, 0, 0.7) 85%);;
+        background: linear-gradient(to bottom, rgba(255,255,255,0.05) 50%, rgba(0, 0, 0, 0.7) 85%);
     }
 
 
