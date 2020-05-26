@@ -462,7 +462,7 @@ body .container {
   position: absolute;
   top: 20px;
   right: 20px;
-  z-index: 100;
+  z-index: 9999;
 }
 
 .menu-btn__burger {
@@ -523,7 +523,7 @@ body .container {
   position: absolute;
   left: 0;
   top: 0;
-  z-index: 99;
+  z-index: 9990;
   height: 100vh;
   max-width: 1500px;
   width: 100vw;
@@ -2022,6 +2022,7 @@ body .container {
   border-radius: 5px;
   -webkit-transform: translateX(-2000px);
           transform: translateX(-2000px);
+  z-index: 11;
   /*   >576px   */
   /*   576px - 767px   */
   /*   768px - 1023px   */
