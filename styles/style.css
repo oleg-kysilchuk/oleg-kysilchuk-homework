@@ -406,9 +406,6 @@ body .container {
   padding-top: 0.1px;
   height: 100vh;
   background: url("../assets/header-bg.jpg") no-repeat center;
-  /*   768px - 1023px   */
-  /*   1024px - 1365px   */
-  /*   1366px   */
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -446,6 +443,7 @@ body .container {
   width: 100%;
   max-width: 1500px;
   height: 80px;
+  z-index: 9999;
 }
 
 .header-logo {
@@ -586,10 +584,6 @@ body .container {
   margin-top: 30vh;
   margin-left: 10vw;
   width: 30%;
-  /*   >576px   */
-  /*   576px - 767px   */
-  /*   768px - 1023px   */
-  /*   1024px - 1365px   */
 }
 
 @media (max-width: 575px) {
@@ -624,9 +618,6 @@ body .container {
   font-weight: 900;
   color: #262626;
   text-transform: capitalize;
-  /*   >576px   */
-  /*   576px - 767px   */
-  /*   1024px - 1365px   */
 }
 
 @media (max-width: 575px) {
@@ -653,7 +644,6 @@ body .container {
   font-weight: 400;
   line-height: 27px;
   color: #262626;
-  /*   1024px - 1365px   */
 }
 
 @media (min-width: 1024px) and (max-width: 1365px) {
@@ -674,8 +664,6 @@ body .container {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
-  /*   >576px   */
-  /*   576px - 767px   */
 }
 
 .get-free:hover {
@@ -705,10 +693,6 @@ body .container {
   padding: 5vh 5vw;
   min-height: 100vh;
   background: #00b2b2;
-  /*   >576px   */
-  /*   576px - 767px   */
-  /*   1024px - 1365px   */
-  /*   1366px   */
 }
 
 @media (max-width: 575px) {
@@ -749,11 +733,6 @@ body .container {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  /*   >576px   */
-  /*   576px - 767px   */
-  /*   768px - 1023px   */
-  /*   1024px - 1365px   */
-  /*   1366px   */
 }
 
 @media (max-width: 575px) {
@@ -803,12 +782,7 @@ body .container {
 
 .abt-sec-pic {
   width: 45%;
-  margin-left: 10px;
-  /*   >576px   */
-  /*   576px - 767px   */
-  /*   768px - 1023px   */
-  /*   1024px - 1365px   */
-  /*   1366px   */
+  margin-right: 5%;
 }
 
 @media (max-width: 575px) {
@@ -848,12 +822,7 @@ body .container {
 
 .abt-sec-ttl {
   width: 45%;
-  margin-right: 10px;
-  /*   >576px   */
-  /*   576px - 767px   */
-  /*   768px - 1023px   */
-  /*   1024px - 1365px   */
-  /*   1366px   */
+  margin-left: 2%;
 }
 
 @media (max-width: 575px) {
@@ -892,9 +861,6 @@ body .container {
   font-weight: bold;
   color: #ffffff;
   text-transform: capitalize;
-  /*   >576px   */
-  /*   576px - 767px   */
-  /*   1024px - 1365px   */
 }
 
 @media (max-width: 575px) {
@@ -924,10 +890,6 @@ body .container {
   line-height: 27px;
   color: #262626;
   color: #ffffff;
-  /*   >576px   */
-  /*   576px - 767px   */
-  /*   768px - 1023px   */
-  /*   1024px - 1365px   */
 }
 
 @media (max-width: 575px) {
@@ -974,9 +936,6 @@ body .container {
       -ms-flex-align: center;
           align-items: center;
   background-color: #70bfff;
-  /*   >576px   */
-  /*   576px - 767px   */
-  /*   768px - 1023px   */
 }
 
 @media (max-width: 575px) {
@@ -1008,9 +967,6 @@ body .container {
 
 .services {
   width: 45%;
-  /*   >576px   */
-  /*   576px - 767px   */
-  /*   768px - 1023px   */
 }
 
 @media (max-width: 575px) {
@@ -1043,9 +999,6 @@ body .container {
   width: 80%;
   height: 100px;
   background-color: #5db3fa;
-  /*   >576px   */
-  /*   576px - 767px   */
-  /*   768px - 1023px   */
 }
 
 .services__item:hover {
@@ -1096,8 +1049,6 @@ body .container {
   position: relative;
   width: 75%;
   margin-top: 35px;
-  /*   >576px   */
-  /*   576px - 767px   */
 }
 
 .services__gal-title::after {
@@ -1108,8 +1059,6 @@ body .container {
   height: 100px;
   width: 1px;
   background-color: #9d9d9d;
-  /*   >576px   */
-  /*   576px - 767px   */
 }
 
 @media (max-width: 575px) {
@@ -1143,9 +1092,6 @@ body .container {
   margin-top: 25px;
   margin-right: 25px;
   font-size: 50px;
-  /*   >576px   */
-  /*   576px - 767px   */
-  /*   1024px - 1365px   */
 }
 
 @media (max-width: 575px) {
@@ -1172,8 +1118,6 @@ body .container {
   text-align: left;
   background: url("../assets/tomatoes.png") center no-repeat;
   background-size: contain;
-  /*   >576px   */
-  /*   576px - 767px   */
 }
 
 @media (max-width: 575px) {
@@ -1194,8 +1138,6 @@ body .container {
   font-weight: bold;
   color: #ffffff;
   text-transform: capitalize;
-  /*   >576px   */
-  /*   576px - 767px   */
 }
 
 @media (max-width: 575px) {
@@ -1220,8 +1162,6 @@ body .container {
 
 .gall-sec-ttl {
   width: 100%;
-  /*   >576px   */
-  /*   576px - 767px   */
 }
 
 @media (max-width: 575px) {
@@ -1242,8 +1182,6 @@ body .container {
   font-weight: bold;
   color: #262626;
   text-transform: capitalize;
-  /*   >576px   */
-  /*   576px - 767px   */
 }
 
 @media (max-width: 575px) {
@@ -1266,9 +1204,6 @@ body .container {
   font-weight: 400;
   line-height: 27px;
   color: #262626;
-  /*   >576px   */
-  /*   576px - 767px   */
-  /*   768px - 1023px   */
 }
 
 @media (max-width: 575px) {
@@ -1297,10 +1232,6 @@ body .container {
   margin: 0px auto 7vh;
   max-width: 1180px;
   width: 95%;
-  /*   >576px   */
-  /*   576px - 767px   */
-  /*   768px - 1023px   */
-  /*   1024px - 1365px   */
 }
 
 @media (max-width: 575px) {
@@ -1346,10 +1277,6 @@ body .container {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  /*   >576px   */
-  /*   576px - 767px   */
-  /*   768px - 1023px   */
-  /*   1024px - 1365px   */
 }
 
 @media (max-width: 575px) {
@@ -1384,8 +1311,6 @@ body .container {
   margin-bottom: 27px;
   -webkit-box-shadow: 1px 1px 8px #262626;
           box-shadow: 1px 1px 8px #262626;
-  /*   >576px   */
-  /*   576px - 767px   */
 }
 
 .gal-first__item:hover {
@@ -1413,10 +1338,6 @@ body .container {
 
 .gal-first__pic {
   max-width: 100%;
-  /*   >576px   */
-  /*   576px - 767px   */
-  /*   768px - 1023px   */
-  /*   1024px - 1365px   */
 }
 
 @media (max-width: 575px) {
@@ -1461,19 +1382,11 @@ body .container {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  /*   >576px   */
-  /*   576px - 767px   */
-  /*   768px - 1023px   */
-  /*   1024px - 1365px   */
 }
 
 .gal-second__item {
   -webkit-box-shadow: 1px 1px 8px #262626;
           box-shadow: 1px 1px 8px #262626;
-  /*   >576px   */
-  /*   576px - 767px   */
-  /*   768px - 1023px   */
-  /*   1024px - 1365px   */
 }
 
 .gal-second__item:hover {
@@ -1537,10 +1450,6 @@ body .container {
 
 .gal-second__pic {
   max-width: 100%;
-  /*   >576px   */
-  /*   576px - 767px   */
-  /*   768px - 1023px   */
-  /*   1024px - 1365px   */
 }
 
 @media (max-width: 575px) {
@@ -1577,10 +1486,6 @@ body .container {
   color: #ffffff;
   text-transform: uppercase;
   background-color: #5585a2;
-  /*   >576px   */
-  /*   576px - 767px   */
-  /*   768px - 1023px   */
-  /*   1024px - 1365px   */
 }
 
 .gal-more-btn:hover {
@@ -1624,11 +1529,6 @@ body .container {
   padding-top: 30vh;
   height: 100vh;
   background: #ffffff url("../assets/subscribe-bg.jpg") center no-repeat;
-  /*   >576px   */
-  /*   576px - 767px   */
-  /*   768px - 1023px   */
-  /*   1024px - 1365px   */
-  /*   1366px   */
 }
 
 @media (max-width: 575px) {
@@ -1668,8 +1568,6 @@ body .container {
 .subscr-ttl {
   margin-left: 10vw;
   width: 60%;
-  /*   >576px   */
-  /*   576px - 767px   */
 }
 
 .subscr-ttl__title {
@@ -1678,10 +1576,6 @@ body .container {
   font-weight: bold;
   color: #262626;
   text-transform: capitalize;
-  /*   >576px   */
-  /*   576px - 767px   */
-  /*   768px - 1023px   */
-  /*   1024px - 1365px   */
 }
 
 @media (max-width: 575px) {
@@ -1718,10 +1612,6 @@ body .container {
   font-weight: 400;
   line-height: 27px;
   color: #262626;
-  /*   >576px   */
-  /*   576px - 767px   */
-  /*   768px - 1023px   */
-  /*   1024px - 1365px   */
 }
 
 @media (max-width: 575px) {
@@ -1773,10 +1663,6 @@ body .container {
 .subscr-form {
   margin-left: 10vw;
   width: 60%;
-  /*   >576px   */
-  /*   576px - 767px   */
-  /*   768px - 1023px   */
-  /*   1024px - 1365px   */
 }
 
 @media (max-width: 575px) {
@@ -1809,8 +1695,6 @@ body .container {
   width: 65%;
   height: 55px;
   border: 1px solid #262626;
-  /*   >576px   */
-  /*   576px - 767px   */
 }
 
 .subscr-form__mail:focus {
@@ -1866,8 +1750,6 @@ body .container {
   font-weight: 300;
   text-transform: uppercase;
   color: #ffffff;
-  /*   >576px   */
-  /*   576px - 767px   */
 }
 
 .subscr-form__subm-btn:hover {
@@ -1907,8 +1789,6 @@ body .container {
   font-weight: bold;
   color: #ffffff;
   text-align: center;
-  /*   >576px   */
-  /*   576px - 767px   */
 }
 
 @media (max-width: 575px) {
@@ -1932,8 +1812,6 @@ body .container {
   line-height: 27px;
   color: #262626;
   color: #ffffff;
-  /*   >576px   */
-  /*   576px - 767px   */
 }
 
 @media (max-width: 575px) {
@@ -1974,10 +1852,6 @@ body .container {
           box-shadow: 0px 2px 5px 0 rgba(0, 0, 0, 0.5);
   -webkit-transition: .5s linear;
   transition: .5s linear;
-  /*   >576px   */
-  /*   576px - 767px   */
-  /*   768px - 1023px   */
-  /*   1024px - 1365px   */
 }
 
 .blog-item::before {
@@ -2025,10 +1899,6 @@ body .container {
   -webkit-transform: translateX(-2000px);
           transform: translateX(-2000px);
   z-index: 11;
-  /*   >576px   */
-  /*   576px - 767px   */
-  /*   768px - 1023px   */
-  /*   1024px - 1365px   */
 }
 
 @media (max-width: 575px) {
@@ -2078,8 +1948,6 @@ body .container {
   color: #ffffff;
   line-height: 25px;
   text-align: left;
-  /*   >576px   */
-  /*   576px - 767px   */
 }
 
 @media (max-width: 575px) {
@@ -2142,9 +2010,6 @@ body .container {
   font-weight: 300;
   text-transform: uppercase;
   color: #ffffff;
-  /*   >576px   */
-  /*   576px - 767px   */
-  /*   768px - 1023px   */
 }
 
 .blog-more-btn:hover {
@@ -2199,8 +2064,6 @@ body .container {
   font-size: 90px;
   font-weight: bold;
   color: #262626;
-  /*   >576px   */
-  /*   576px - 767px   */
 }
 
 @media (max-width: 575px) {
@@ -2237,9 +2100,6 @@ body .container {
       justify-content: space-around;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  /*   >576px   */
-  /*   576px - 767px   */
-  /*   768px - 1023px   */
 }
 
 @media (max-width: 575px) {
@@ -2272,7 +2132,6 @@ body .container {
 .contact-form {
   margin: 0 auto 3vh;
   max-width: 500px;
-  /*   768px - 1023px   */
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -2330,7 +2189,6 @@ body .container {
   resize: none;
   padding-top: 15px;
   padding-right: 10px;
-  /*   768px - 1023px   */
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -2409,8 +2267,6 @@ body .container {
 .copyright__logo {
   font-family: 'Pacifico', cursive;
   font-size: 26px;
-  /*   >576px   */
-  /*   576px - 767px   */
 }
 
 @media (max-width: 575px) {

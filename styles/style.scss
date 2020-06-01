@@ -57,6 +57,7 @@ body {
     width: 100%;
     max-width: 1500px;
     height: 80px;
+    z-index: 9999;
 }
 
 .header-logo {
@@ -342,7 +343,7 @@ body {
 
 .abt-sec-pic {
     width: 45%;
-    margin-left: 10px;
+    margin-right: 5%;
 
 
     @include mobile {
@@ -376,7 +377,7 @@ body {
 
 .abt-sec-ttl {
     width: 45%;
-    margin-right: 10px;
+    margin-left: 2%;
 
 
     @include mobile {
