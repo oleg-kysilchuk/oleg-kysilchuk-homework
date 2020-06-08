@@ -4,7 +4,7 @@
     border: 0;
     outline: 0;
     color: $clr-txt-prim;
-    background-image: linear-gradient(45deg, #496bfe 40%, #5474fd 40%);
+    background-image: linear-gradient(45deg, #496bfe 40%, $clr-stl-main 40%);
     font-family: $aleo;
     font-size: 16px;
     font-weight: 400;
@@ -13,8 +13,8 @@
     cursor: pointer;
 
     &:hover {
-        color: #5474fd;
-        background-image: linear-gradient(315deg, #ffffff 40%, #e8e8e8 40%);
+        color: $clr-stl-main;
+        background-image: linear-gradient(315deg, $clr-txt-prim 40%, $clr-txt-secnd 40%);
     }
 
     &:active {
@@ -22,8 +22,8 @@
     }
 
     &:focus {
-        color: #5474fd;
-        background-image: linear-gradient(315deg, #ffffff 40%, #e8e8e8 40%);
+        color: $clr-stl-main;
+        background-image: linear-gradient(315deg, $clr-txt-prim 40%, $clr-txt-secnd 40%);
     }   
 
     &>span {
@@ -32,6 +32,4 @@
         margin-right: 13px;
         font-size: 20px;
     }
-
-    /* hover and active and focus for form */
 }

@@ -5,9 +5,29 @@
 
 .page-footer {
     margin: 0 auto;
-    padding: 121px 0 50px;
+    padding: 119px 0 50px;
     max-height: 268px;
-    max-width: 1110px;
+    max-width: 1200px;
+
+    @include mobile {
+        padding: 5% 5% 10%;
+        max-height: none;
+    }
+    
+    @include mobile-w {
+        padding: 5% 5% 10%;
+        max-height: none;
+    }
+    
+    @include tablet {
+        padding: 7% 10%;
+        max-height: none;
+    }
+
+    @media (min-width: #{$large}) and (max-width: 1199px) {
+        padding: 7% 10%;
+        max-height: none;
+    }
 }
 
 .footer-cont {
@@ -15,11 +35,38 @@
     width: 165px;
     text-align: center;
 
+
+    @include mobile {
+        width: 100%;
+    }
+    
+    @include mobile-w {
+        width: 100%;
+    }
+    
+    @include tablet {
+        width: 100%;
+    }
+
+    @media (min-width: #{$large}) and (max-width: 1199px) {
+        width: 100%;
+    }
+
+
     &__logo {
         @include text($josefin, 25px, 400, $clr-txt-prim);
         text-transform: uppercase;
         letter-spacing: 2px;
         margin-bottom: 11px;
+
+
+        @include tablet {
+            font-size: 36px;
+        }
+
+        @media (min-width: #{$large}) and (max-width: 1199px) {
+            font-size: 50px;
+        }
     }
 
     &__subtitle {
@@ -27,6 +74,16 @@
         text-transform: capitalize;
         word-spacing: 7px;
         margin-bottom: 28px;
+
+
+        @include tablet {
+            font-size: 22px;
+        }
+
+        @media (min-width: #{$large}) and (max-width: 1199px) {
+            font-size: 28px;
+            margin-bottom: 40px;
+        }
     }
 }
 
@@ -41,6 +98,23 @@
         &:hover {
             color: $clr-stl-main;
             transform: scale(2);
+        }
+
+
+        @include mobile {
+            font-size: 42px;
+        }
+        
+        @include mobile-w {
+            font-size: 42px;
+        }
+        
+        @include tablet {
+            font-size: 42px;
+        }
+
+        @media (min-width: #{$large}) and (max-width: 1199px) {
+            font-size: 50px;
         }
     }
 }

@@ -5,51 +5,198 @@
     background-size: cover;
 }
 
+
 .who-we-are {
     margin: 0 auto;
-    padding: 120px 2px;
-    max-width: 1110px;
+    padding: 120px 45px;
+    max-width: 1200px;
     max-height: 685px;
+
+
+    @include mobile {
+        max-height: none;
+        padding: 20% 3% 10%;
+    }
+    
+    @include mobile-w {
+        max-height: none;
+        padding: 20% 3% 10%;
+    }
+    
+    @include tablet {
+        max-height: none;
+        padding: 8% 0;
+    }
+    
+    @include laptop {
+        padding: 120px 2%;
+    }
 }
+
 
 .wwa-cont {
     margin: 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
+
+    @include mobile {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    @include mobile-w {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    @include tablet {
+        flex-direction: column;
+        align-items: center;
+    }
 }
+
 
 .article {
     padding-top: 80px;
     max-width: 535px;
 
+
+    @include mobile {
+        padding-top: 0;
+        width: 90%;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+    
+    @include mobile-w {
+        padding-top: 0;
+        width: 90%;
+        margin-bottom: 50px;
+        text-align: center;
+    }
+    
+    @include tablet {
+        padding-top: 0;
+        width: 90%;
+        margin-bottom: 60px;
+    }
+
+
     &__title {
         @include text($aleo, 36px, 400, $clr-txt-prim);
         text-transform: capitalize;
         margin-bottom: 53px;
+
+
+        @include mobile {
+            margin-bottom: 20px;
+        }
+        
+        @include mobile-w {
+            margin-bottom: 20px;
+        }
+
+        @include tablet {
+            margin-bottom: 40px;
+        }
     }
+
 
     &__text {
         @include text($josefin, 19px, 100, $clr-txt-secnd);
         line-height: 1.39;
         margin-bottom: 28px;
+
+
+        @include mobile {
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+        
+        @include mobile-w {
+            margin-bottom: 10px;
+            font-size: 20px;
+        }
+
+        @include tablet {
+            font-size: 24px;
+        }
     }
+
 
     &__explore-btn {
         margin-top: 15px;
+
+
+        @include mobile {
+            width: 100%;
+        }
+        
+        @include mobile-w {
+            width: 100%;
+        }
     }
 
 }
 
 
 .gallery {
-    max-width: 470px;
+    max-width: 475px;
 
-    &__picture-top {
-        margin-right: 120px;
+    @include mobile {
+        width: 90%;
+    }
+    
+    @include mobile-w {
+        width: 90%;
     }
 
+    @include tablet {
+        max-width: none;
+    }
+
+
+    &__picture-top {
+        margin-right: 124px;
+
+
+        @include mobile {
+            margin-right: 0;
+            margin-bottom: 15px;
+        }
+        
+        @include mobile-w {
+            margin: 0;
+        }
+
+        @include tablet {
+            margin-right: 180px;
+            margin-bottom: 10px;
+        }
+    }
+
+
     &__picture-bott {
-        margin-left: 120px;
+        margin-left: 124px;
+
+
+        @include mobile {
+            margin: 0;
+        }
+        
+        @include mobile-w {
+            margin: 0;
+        }
+
+        @include tablet {
+            margin-left: 180px;
+        }
+    }
+
+    
+    &__image {
+        width: 100%;
     }
 }
