@@ -1,0 +1,145 @@
+.header-wrapper {
+    max-width: 100vw;
+    background-image: url("../../assets/header-background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.page-header {
+    margin: 0 auto;
+    padding-top: 234px;
+    max-height: 820px;
+}
+
+.header-content {
+    margin: 0 auto 289px;
+    text-align: center;
+    max-width: 650px;
+    
+
+    &__logo {
+        @include text($josefin, 48px, 600, $clr-txt-prim);
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        margin-bottom: 7px;
+    }
+
+    &__subtitle {
+        @include text($josefin, 22px, 300, $clr-txt-prim);
+        text-transform: capitalize;
+        letter-spacing: 5.5px;
+        margin-bottom: 48px;
+    }
+
+    &__search {
+        padding: 2px;
+        width: 100%;
+        height: 60px;
+        background-color: $clr-txt-prim;
+
+        &__field {
+            border: 0;
+            outline: 0;
+            height: 56px;
+            width: 77%;
+            float: left;
+            @include text($josefin, 18px, 400, #999999);
+            text-transform: capitalize;
+            text-align: center;
+
+            &::placeholder {
+                @include text($josefin, 18px, 300, #999999);
+                text-transform: capitalize;
+            }
+
+            &:focus {
+                background-color: rgba(84, 116, 253, 0.35);
+            }
+
+        }
+
+        &__search-btn {
+            padding-left: 19px;
+            width: 145px;
+            height: 56px;
+            letter-spacing: 1px;
+            background-image: none;
+            background-color: $clr-stl-main;
+            float: right;
+            line-height: 1.55;
+        }
+    }
+}
+
+.scroll {
+    position: absolute;
+    top: 71.5%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90px;
+    text-align: center;
+    
+
+    &__text {
+        @include text($josefin, 16px, 100, $clr-txt-prim);
+        text-transform: capitalize;
+    }
+
+    &__icon {
+        display: block;
+        margin-top: 9px;
+        font-size: 6px;
+        font-weight: 100;
+    }
+}
+
+.nav-wrap {
+    width: 100%;
+    background-color: $clr-stl-main;
+}
+
+.navigation {
+    margin: 0 auto;
+    padding: 27px 0;
+    width: 1110px;
+    height: 80px;
+    background-color: $clr-stl-main;
+
+    &__logo {
+        float: left;
+        @include text($josefin, 24px, 400, $clr-txt-prim);
+        text-transform: uppercase;
+        letter-spacing: 2px;
+    }
+}
+
+
+.menu {
+    float: right;
+
+
+    &__item {
+        margin-top: 5px;
+        display: inline-block;
+        margin-left: 37px;
+    }
+
+    &__link {
+        @include text($aleo, 14px, 400, $clr-txt-prim);
+        text-transform: uppercase;
+
+
+        &:hover {
+            border-bottom: 1px solid #ff6363;
+            color: #ff6363;
+        }
+
+        &:focus {
+            border: 0;
+            outline: 0;
+            border-bottom: 1px solid #ff6363;
+            color: #ff6363;
+        }
+    }
+}

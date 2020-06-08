@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!----Fonts----->
-    <link href="https://fonts.googleapis.com/css2?family=Aleo&family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Aleo:wght@300;400;700&family=Josefin+Sans:wght@100;300;400;500;600;700&display=swap" rel="stylesheet">
     <!----Icons----->
-
+    <link rel="stylesheet" href="https://i.icomoon.io/public/temp/bd8774c93e/UntitledProject/style.css">
     <!----Favicon--->
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
@@ -18,196 +18,235 @@
 </head>
 <body>
 
-
-    <div class="container">
         
-        <header class="page-header">
+        <div class="header-wrapper">
 
-            <div class="content">
+            <header class="page-header">
+                
+                <div class="header-content">
 
-                <h1 class="logo">bhromaon</h1>
-                <p class="subtitle">safe travel anywhere</p>
+                    <h1 class="header-content__logo">bhromaon</h1>
+                    <p class="header-content__subtitle">safe travel anywhere</p>
 
-                <form action="#" id="search-form" class="search">
-                    <input type="search" name="search">
-                    <button class="search-btn" type="submit">search ICON!!!</button>
-                </form>
+                    <form action="#" id="search-form" class="header-content__search">
+                        <input class="header-content__search__field" type="search" name="search" pattern="^[a-zA-Z]+( [a-zA-Z]+)*$"  placeholder="search your travel destination" required>
+                        <button class="header-content__search__search-btn btn" type="submit" form="search-form">search   <span class="icon-loupe"></span></button>
+                    </form>
 
-            </div>
-
-            <div class="navigation">
-
-                <div class="logo">bhromaon</div>
-
-                <nav class="menu">
-                    <ul>
-                        <li class="menu-item">who we are</li>
-                        <li class="menu-item">what we do</li>
-                        <li class="menu-item">travel with us</li>
-                        <li class="menu-item">contact us</li>
-                    </ul>
-                </nav>
-
-            </div>
-
-            <div class="scroll">
-                <span>scroll down</span>
-            </div>
-
-        </header>
-
-
-        <section class="who-we-are">
-
-            <div class="choose-us">
-
-                <div class="explore">
-                    <h2>why choose us</h2>
-                    <p>Tion and dislike men who are so beguiled and demoralized by desire by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee</p>
-
-                    <p>Ddislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that.</p>
-
-                    <button type="button">explore places</button>
                 </div>
+                        
+                <div class="nav-wrap">
 
-                <div class="gallery">
-                    <img src="" alt=""> <!----div??-->
-                    <img src="" alt="">
-                </div>
+                    <div class="navigation">
 
-            </div>
+                        <div class="navigation__logo">bhromaon</div>
 
-        </section>
+                        <nav class="menu">
+                            <ul>
+                                <li class="menu__item"><a href="#" class="menu__link">who we are</a></li>
+                                <li class="menu__item"><a href="#" class="menu__link">what we do</a></li>
+                                <li class="menu__item"><a href="#" class="menu__link">travel with us</a></li>
+                                <li class="menu__item"><a href="#" class="menu__link">contact us</a></li>
+                            </ul>
+                        </nav>
 
-
-        <section class="how-it-works">
-
-            <div class="content">
-
-                <div class="step">
-
-                    <span></span>
-                </div>
-
-                <div class="step">
-
-                    <span></span>
-                </div>
-
-                <div class="step">
-
-                    <span></span>
-                </div>
-
-            </div>
-
-        </section>
-
-        <section class="country">
-
-            <div class="content">
-
-                <div class="place">
-
-                    <span>spain</span>
-                    <h3>grand spain madrid</h3>
-
-                    <p>But I must explain to you how all this mistaken idea of account to denouncing pleasure and praising pain was account  born and I account will give you a complete account of the system</p>
-
-                    <button type="button">book now</button>
+                    </div>
 
                 </div>
 
-            </div>
+                <div class="scroll">
+                    <span class="scroll__text">scroll down</span>
+                    <span class="scroll__icon icon-scroll"></span>
+                </div>
 
-            <div class="content">
+            </header>
 
-                <div class="place">
+        </div>
 
-                    <span>spain</span>
-                    <h3>grand spain madrid</h3>
 
-                    <p>But I must explain to you how all this mistaken idea of account to denouncing pleasure and praising pain was account  born and I account will give you a complete account of the system</p>
+        <div class="whoweare-wrapper">
 
-                    <button type="button">book now</button>
+            <section class="who-we-are">
+
+                <div class="wwa-cont">
+
+                    <div class="article">
+                        <h2 class="article__title">why choose us</h2>
+
+                        <p class="article__text">Tion and dislike men who are so beguiled and demoralized by desire by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee</p>
+
+                        <p class="article__text">Ddislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire, that.</p>
+
+                        <button class="article__explore-btn btn" type="button">explore places</button>
+                    </div>
+
+                    <div class="gallery">
+
+                        <div class="gallery__picture-top">
+                            <img src="./assets/places1.jpg" alt="place">
+                        </div>
+                        
+                        <div class="gallery__picture-bott">
+                            <img src="./assets/places2.jpg" alt="place">
+                        </div>
+
+                    </div>
 
                 </div>
 
-            </div>
+            </section>
 
-        </section>
+        </div>
 
 
-        <section class="testemonial">
+        <div class="howit-wrapper">
 
-            <div class="content">
+            <section class="how-it-works">
 
-                <h2>what our tourist say</h2>
+                <div class="order">
+
+                    <div class="order__step">
+                        <span class="order__step__icon icon-search"></span>
+                        <span class="order__step__text">search places</span>
+                    </div>
+
+                    <div class="order__step">
+                        <span class="order__step__icon icon-select"></span>
+                        <span class="order__step__text">select places</span>
+                    </div>
+
+                    <div class="order__step">
+                        <span class="order__step__icon icon-like"></span>
+                        <span class="order__step__text">book & enjoy</span>
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+
+        <div class="country-top-wrapper">
+
+            <section class="country-top">
+
+                <div class="place-t">
+
+                    <p class="place-t__name">spain</p>
+                    <h3 class="place-t__title">grand spain madrid</h3>
+
+                    <p class="place-t__description">But I must explain to you how all this mistaken idea of account to denouncing pleasure and praising pain was account  born and I account will give you a complete account of the system</p>
+
+                    <button class="place-t__book-btn btn" type="button">book now</button>
+
+                </div>
+
+            </section>
+
+        </div>
+
+
+
+        <div class="country-bott-wrapper">
+
+            <section class="country-bott">
+
+                <div class="country-content">
+
+                    <div class="place-b">
+
+                        <p class="place-b__name">spain</p>
+                        <h3 class="place-b__title">grand spain madrid</h3>
+
+                        <p class="place-b__description">But I must explain to you how all this mistaken idea of account to denouncing pleasure and praising pain was account  born and I account will give you a complete account of the system</p>
+
+                        <button class="place-b__book-btn btn" type="button">book now</button>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+
+        <div class="testemonial-wrapper">
+
+            <section class="testemonial">
+
+                <h2 class="sec-title">what our tourist say</h2>
 
                 <div class="feedback">
 
-                    <div class="photo">
-                        <img src="" alt="">
+                    <div class="feedback__photo">
+                        <img src="./assets/tourist.jpg" alt="user">
                     </div>
 
-                    <div class="message">
+                    <div class="feedback__message">
 
-                        <span>sam sumon</span>
-                        <p>But I must explain to you how all this mistaken idea of account to denouncinpleasure and praising pain  But I must explain to you how all this mistaken idea of account to nai denouncing pleasure and praising pain was account  born and I account will give you a complete account of the system was account  born and I account will give you a nai the complete account of the system</p>
+                        <p class="feedback__message__user">sam sumon</p>
+                        <p class="feedback__message__text">But I must explain to you how all this mistaken idea of account to denouncinpleasure and praising pain  But I must explain to you how all this mistaken idea of account to nai denouncing pleasure and praising pain was account  born and I account will give you a complete account of the system was account  born and I account will give you a nai the account of the system</p>
 
                     </div>
 
                 </div>
-            </div>
+                
+            </section>
 
-        </section>
-
-
-        <footer class="page-footer">
-
-            <div class="container">
-
-                <span class="logo">bhromaon</span>
-                <p class="subtitle">safe travel anywhere</p>
-
-                <ul class="social">
-                    <li class="social-item">
-                        <a href="" class="social-link">
-                            
-                        </a>
-                    </li>
-
-                    <li class="social-item">
-                        <a href="" class="social-link">
-
-                        </a>
-                    </li>
-
-                    <li class="social-item">
-                        <a href="" class="social-link">
-
-                        </a>
-                    </li>
-
-                    <li class="social-item">
-                        <a href="" class="social-link">
-
-                        </a>
-                    </li>
-
-                    <li class="social-item">
-                        <a href="" class="social-link">
-
-                        </a>
-                    </li>
-                </ul>
-
-            </div>
-
-        </footer>
-
-    </div>
+        </div>
 
 
+        <div class="footer-wrapper">
+
+            <footer class="page-footer">
+
+                <div class="footer-cont">
+
+                    <p class="footer-cont__logo">bhromaon</p>
+                    <p class="footer-cont__subtitle">safe travel anywhere</p>
+
+                    <div class="social">
+
+                        <div class="social__item">
+                            <a href="https://www.facebook.com/" target="_blank" class="social__link">
+                                <i class="social__icon fab fa-facebook-f"></i>
+                            </a>
+                        </div>
+
+                        <div class="social__item">
+                            <a href="https://twitter.com/" target="_blank" class="social__link">
+                                <i class="social__icon fab fa-twitter"></i>
+                            </a>
+                        </div>
+
+                        <div class="social__item">
+                            <a href="https://www.linkedin.com/" target="_blank" class="social__link">
+                                <i class="social__icon fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+
+                        <div class="social__item">
+                            <a href="https://www.youtube.com/" target="_blank" class="social__link">
+                                <i class="social__icon fab fa-youtube"></i>
+                            </a>
+                        </div>
+
+                        <div class="social__item">
+                            <a href="https://www.pinterest.com/" target="_blank" class="social__link">
+                                <i class="social__icon fab fa-pinterest"></i>
+                            </a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </footer>
+
+        </div>
+
+        <script src="https://kit.fontawesome.com/2f5f85827b.js" crossorigin="anonymous"></script>
 </body>
 </html>
