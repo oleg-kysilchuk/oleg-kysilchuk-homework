@@ -1,5 +1,5 @@
 .testemonial-wrapper {
-    background-image: url("../../assets/feedback-background.jpg");
+    background-image: url("./assets/feedback-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -26,14 +26,6 @@
     @include tablet {
         padding: 7% 3%;
         max-height: none;
-    }
-    
-    @include laptop {
-    
-    }
-    
-    @include desktop {
-        
     }
 }
 
@@ -81,14 +73,6 @@
     @include tablet {
         flex-direction: column;
         height: 100%;
-    }
-    
-    @include laptop {
-    
-    }
-    
-    @include desktop {
-        
     }
 
 

@@ -1,6 +1,6 @@
 .header-wrapper {
     max-width: 100vw;
-    background-image: url("../../assets/header-background.jpg");
+    background-image: url("./assets/header-background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -89,6 +89,30 @@
             text-transform: capitalize;
             text-align: center;
 
+            &::-webkit-input-placeholder {
+                @include text($josefin, 15px, 300, #999999);
+                text-transform: capitalize;
+                letter-spacing: 1.5px;
+            }
+
+            &::-moz-placeholder {
+                @include text($josefin, 15px, 300, #999999);
+                text-transform: capitalize;
+                letter-spacing: 1.5px;
+            }
+
+            &:-ms-input-placeholder {
+                @include text($josefin, 15px, 300, #999999);
+                text-transform: capitalize;
+                letter-spacing: 1.5px;
+            }
+
+            &::-ms-input-placeholder {
+                @include text($josefin, 15px, 300, #999999);
+                text-transform: capitalize;
+                letter-spacing: 1.5px;
+            }
+
             &::placeholder {
                 @include text($josefin, 15px, 300, #999999);
                 text-transform: capitalize;
@@ -120,6 +144,10 @@
             background-color: $clr-stl-main;
             float: right;
             line-height: 1.55;
+
+            &:active {
+                transform: scale(0.9);
+            }
         }
     }
 }
@@ -242,6 +270,11 @@
         display: none;
 
         &:hover {
+            color: #ff6363;
+        }
+
+        &:focus {
+            outline: 0;
             color: #ff6363;
         }
 
