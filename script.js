@@ -1,18 +1,31 @@
 // /*Запросить у пользователя его возраст и определить, кем он является: ребенком (0–2), подростком (12–18), взрослым (18_60) или пенсионером (60– ...).*/
 
+
 // const age = prompt("Your age?");
 
-// if(age >= 0 && age <=2) {
-//     alert(`You are kid`);
-// } else if(age >= 12 && age < 18) {
-//     alert(`You are teenager`);
-// } else if(age >= 18 && age < 60) {
-//     alert(`You are adult`);
-// } else if(age >= 60) {
-//     alert(`You are senior`);
-// } else {
-//     alert(`Error! Enter correct age!`)
+// switch(true) {
+//     case age >= 0 && age <=2:
+//         alert(`You are kid`);
+//         break;
+
+//     case age >= 12 && age < 18:
+//         alert(`You are teenager`);
+//         break;
+
+//     case age >= 18 && age < 60:
+//         alert(`You are adult`);
+//         break;
+
+//     case age >= 60:
+//         alert(`You are senior`);
+//         break;
+
+//     default:
+//         alert(`Error! Enter correct age!`);
+//         break;
 // }
+
+
 
 
 // /*Запросить у пользователя число от 0 до 9 и вывести ему спецсимвол, который расположен на этой клавише (1–!, 2–@, 3–# и т. д).*/
@@ -95,7 +108,7 @@
 
 /*Запросить у пользователя пятиразрядное число и определить, является ли оно палиндромом.*/
 
-// const num5 = prompt("Веедите пятизначное число");
+// const num5 = prompt("Введите пятизначное число");
 
 // for (let i = 0;i < num5.length-1; i++) {
 //   (num5[i] == num5[i+4]) && (num5[i+1] == num5[i+3]) ? alert("This number is palindrome!") : alert("This number is not palindrome");
@@ -114,19 +127,28 @@
 // const UAH = 26.6;
 // const AZN = 1.7;
 
-// if(currency == "EUR" || currency == "eur") {
+// switch(true) {
+//     case currency == "EUR" || currency == "eur":
 //     alert(`You will get ${value * EUR} EUR`);
-// } else if(currency == "UAH" || currency == "uah") {
+//     break;
+
+//     case currency == "UAH" || currency == "uah":
 //     alert(`You will get ${value * UAH} UAH`);
-// } else if(currency == "AZN" || currency == "azn") {
+//     break;
+    
+//     case currency == "AZN" || currency == "azn":
 //     alert(`You will get ${value * AZN} AZN`);
-// } else {
+//     break;
+
+//     default:
 //     alert(`Error! Choose correct currency!`);
 // }
 
 
 
+
 // /*Запросить у пользователя сумму покупки и вывести сумму к оплате со скидкой: от 200 до 300 – скидка будет 3%, от 300 до 500 – 5%, от 500 и выше – 7%.*/
+
 
 // const price = prompt(`Enter purchase price`);
 
@@ -134,15 +156,24 @@
 // const disc5 = 0.05;
 // const disc7 = 0.07;
 
-// if(price >= 200 && price < 300) {
-//     alert(`Your price with discount is ${price - price * disc3}`);
-// } else if(price >= 300 && price < 500) {
-//     alert(`Your price with discount is ${price - price * disc5}`);
-// } else if(price >= 500) {
-//     alert(`Your price with discount is ${price - price * disc7}`);
-// } else {
-//     alert(`Please, buy something for 200 or more!`);
+// switch(true) {
+//     case price >= 200 && price < 300:
+//         alert(`Your price with discount is ${price - price * disc3}`);
+//         break;
+
+//     case price >= 300 && price < 500:
+//         alert(`Your price with discount is ${price - price * disc5}`);
+//         break;
+
+//     case price >= 500:
+//         alert(`Your price with discount is ${price - price * disc7}`);
+//         break;
+
+//     default:
+//         alert(`Please, buy something for 200 or more!`);
 // }
+
+
 
 
 
