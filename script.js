@@ -76,27 +76,36 @@
 // for(let i = 1;i <= 10; i++) {
 //     num5 = +prompt("Enter ten numbers (1 per time)");
 
-//     if(num5 == 0) {
-//         zero++;
-//         even++;
-//     } else if(num5 < 0 && num5 % 2 !== 0) {
-//         mNum++;
-//         odd++;
-//     } else if(num5 < 0 && num5 % 2 == 0) {
-//         mNum++;
-//         even++;
-//     } else if(num5 > 0 && num5 % 2 !== 0) {
-//         pNum++;
-//         odd++;
-//     } else if(num5 > 0 && num5 % 2 == 0) {
-//         pNum++;
-//         even++;
-//     } else {
-//         alert(`Error!`);
-//     } 
-// }
+//     switch(true) {
+//         case num5 == 0:
+//             zero++;
+//             even++;
+//             break;
 
-// /*Прийшлося писати багато іф/елсів бо в скороченому записі я не зміг за одну перевірку збільшити 2 змінні а мінусове число може так само бути і парним і не парним ¯\_(ツ)_/¯*/
+//         case num5 < 0 && num5 % 2 !== 0:
+//             mNum++;
+//             odd++;
+//             break;
+
+//         case num5 < 0 && num5 % 2 == 0:
+//             mNum++;
+//             even++;
+//             break;
+
+//         case num5 > 0 && num5 % 2 !== 0:
+//             pNum++;
+//             odd++;
+//             break;
+
+//         case num5 > 0 && num5 % 2 == 0:
+//             pNum++;
+//             even++;
+//             break;
+
+//         default:
+//             alert(`Error!`);
+//     }
+// }
 
 // alert(`Чётных:${odd}, Нечётных:${even}, Положительных:${pNum}, Отрицательных:${mNum}, Нулей:${zero}`);
 
@@ -115,11 +124,26 @@
 //     let calcNum2 = +prompt("Введите второе число");
 //     let op = prompt("Введите оператор");
 
-//     (op == "+") ? res = calcNum1 + calcNum2 :
-//     (op == "-") ? res = calcNum1 - calcNum2 :
-//     (op == "*") ? res = calcNum1 * calcNum2 :
-//     (op == "/") ? res = calcNum1 / calcNum2 :
-//     alert(`Error!`);
+//     switch(op) {
+//         case "+":
+//             res = calcNum1 + calcNum2;
+//             break;
+
+//         case "-":
+//             res = calcNum1 - calcNum2;
+//             break;
+
+//         case "*":
+//             res = calcNum1 * calcNum2;
+//             break;
+
+//         case "/":
+//             res = calcNum1 / calcNum2;
+//             break;
+
+//         default:
+//             alert(`Error!`);
+//     }
     
 //     alert(res);
 //     res = 0;
@@ -145,14 +169,38 @@
 // const sun = "Воскресенье";
 
 // do {
-//     (num6 == 1 || num6 % 7 == 1) ? day = mon :
-//     (num6 == 2 || num6 % 7 == 2) ? day = tue :
-//     (num6 == 3 || num6 % 7 == 3) ? day = wed :
-//     (num6 == 4 || num6 % 7 == 4) ? day = thu :
-//     (num6 == 5 || num6 % 7 == 5) ? day = fri :
-//     (num6 == 6 || num6 % 7 == 6) ? day = sat :
-//     (num6 == 7 || num6 % 7 == 0) ? day = sun :
-//     alert(`Error!`);
+//     switch(true) {
+//         case num6 == 1 || num6 % 7 == 1:
+//             day = mon;
+//             break;
+            
+//         case num6 == 2 || num6 % 7 == 2:
+//             day = tue;
+//             break;
+
+//         case num6 == 3 || num6 % 7 == 3:
+//             day = wed;
+//             break;
+
+//         case num6 == 4 || num6 % 7 == 4:
+//             day = thu;
+//             break;
+
+//         case num6 == 5 || num6 % 7 == 5:
+//             day = fri;
+//             break;
+
+//         case num6 == 6 || num6 % 7 == 6:
+//             day = sat;
+//             break;
+
+//         case num6 == 7 || num6 % 7 == 0:
+//             day = sun;
+//             break;
+
+//         default:
+//             alert(`Error!`); 
+//     }
     
 //     question = confirm(`${day}. Хотите увидеть следующий день?`);
 //     num6++;
@@ -200,3 +248,5 @@
 //     alert(`Error!`);
 //     corNum = res;
 // }   /* Не готове */
+
+
