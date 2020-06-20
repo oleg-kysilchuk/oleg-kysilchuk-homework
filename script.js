@@ -1,23 +1,8 @@
 /*Написать функцию, которая принимает 2 числа и возвращает -1, если первое меньше, чем второе; 1 – если первое больше, чем второе; и 0 – если числа равны.*/
 
-// function checkNumber(a, b) {
+// let checkNumber = (a, b) => a < b ? -1 : a > b ? 1 : 0;
 
-//     switch(true) {
-//         case a < b:
-//             return -1;
-
-//         case a > b:
-//             return 1;
-
-//         case a == b:
-//             return 0;
-
-//         default:
-//             break;
-//     }
-// }
-
-// console.log(checkNumber());
+// console.log(checkNumber(2, 2));
 
 
 
@@ -61,14 +46,9 @@
 
 /*Написать функцию, которая принимает длину и ширину прямоугольника и вычисляет его площадь. Если в функцию передали 1 параметр, то она вычисляет площадь квадрата.*/
 
+// let getSquare = (a, b = 1) => b > 1 ? a*b : Math.pow(a, 2);
 
-// function getSquare(a, b = 1) {
-//     return (b > 1) ? a*b : Math.pow(a, 2);
-// }
-
-// console.log(getSquare(4, 5));
-
-
+// console.log(getSquare(4,5));
 
 
 
@@ -122,11 +102,17 @@
 /*Написать функцию, которая принимает время (часы, минуты, секунды) и выводит его на экран в формате «чч:мм:сс».Если при вызове функции минуты и/или секунды не были переданы, то выводить их как 00.*/
 
 
-// function getTime(hh, mm = "00", ss = "00") {
+// function showTime(hh, mm = "00", ss = "00") {
 //     hh > 24 || mm > 60 || ss > 60 ? alert(`Error! Enter correct time!`) : alert(`Время ${hh}:${mm}:${ss} !`);
 // }
 
-// getTime(16, 40, 15);
+// showTime(16, 40, 15);
+
+                        /*АБО*/
+
+// let showTime = (hh, mm = "00", ss = "00") => hh > 24 || mm > 60 || ss > 60 ? alert(`Error! Enter correct time!`) : alert(`Время ${hh}:${mm}:${ss} !`);
+
+// showTime(16, 40, 15);
 
 
 
@@ -134,12 +120,9 @@
 
 /*Написать функцию, которая принимает часы, минуты и секунды и возвращает это время в секундах.*/
 
-// function calcSecs(h, m = 0 ,s = 0) {
-//     let seconds = h * 3600 + m * 60 + s;
-//     return seconds;
-// }
-
-// console.log(calcSecs(14, 35, 40));  /*Зробив через математику, без getTime/getDate і тд ¯\_(ツ)_/¯*/
+// let calcSecs = (h, m = 0 ,s = 0) => h * 3600 + m * 60 + s;
+// console.log(calcSecs(14, 35, 40));                   /*Зробив через математику, без getTime/getDate і тд*/
+                                                    
 
 
 
@@ -148,20 +131,24 @@
 /*Написать функцию, которая принимает количество секунд, переводит их в часы, минуты и секунды и возвращает в виде строки «чч:мм:сс».*/
 
 
-function calcTime(s) {
-    let str = "";
-    let d = new Date(s * 1000);
-    let hh = d.getHours();
-    str += hh;
-    str += "h:";
-    let mm = (s*1000 - hh * 3600).getMinutes();
-    str += mm;
-    str += "m:";
-    let ss = (s*1000 - hh*3600 - mm*60).getSeconds();
-    str += ss;
-    str += "s";
+// function calcTime(s) {
+//     let str = "";
+//     let hh = Math.floor(s/3600);
+//     str += hh;
+//     str += ":";
+//     let mm = Math.floor((s - hh*3600)/60);
+//     str += mm;
+//     str += ":";
+//     let ss = s - hh*3600 - mm*60;
+//     str += ss;
 
-    return str;
-}
+//     return str;
+// }
 
-console.log(calcTime(20723));
+// console.log(calcTime(20723));
+
+
+
+
+
+
