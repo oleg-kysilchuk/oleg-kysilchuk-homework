@@ -164,3 +164,105 @@
 // }
 
 // printText(stl, "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi deleniti totam asperiores officia, ut illum dolorem modi! Iste aliquid quasi eligendi reprehenderit impedit at, dignissimos explicabo enim odio itaque facilis iusto repudiandae doloribus minima blanditiis aperiam, earum totam, nobis atque. Architecto, non amet! Inventore alias ullam unde sit ratione rerum.");
+
+
+
+
+
+/* 4.Создать массив аудиторий академии. Объект-аудитория состоит из названия, количества посадочных мест (от 10 до 20) и названия факультета, для которого она предназначена. Написать несколько функций для работы с ним:*/
+
+let classroomsList = [];
+
+function newClassroom(crName, pAmount, faculty) {
+
+    let classroom = {
+            crName: crName,
+            pAmount: pAmount,
+            faculty: faculty
+    }
+
+    classroomsList.push(classroom);
+}
+
+newClassroom("gamma", 10, "physics");
+newClassroom("alpha", 20, "mathematics");
+newClassroom("beta", 15, "chemistry");
+newClassroom("delta", 12, "physics");
+newClassroom("zeta", 17, "mathematics");
+newClassroom("echo", 16, "chemistry");
+
+
+/*Вывод на экран всех аудиторий;*/
+
+classroomsList.forEach((item) => {
+    document.write(`Аудитория: ${item.crName}<br>Количество мест: ${item.pAmount}<br>Факультет: ${item.faculty}<br><hr>`);
+});
+
+document.write(`<hr><hr>`);
+
+/*Вывод на экран аудиторий для указанного факультета;*/
+
+function getRoomByFacl(facultyName) {
+    
+    let acceptableRooms = [];
+
+    classroomsList.find((item) => {
+        if(item.faculty == facultyName) {
+            acceptableRooms.push(item);
+        }
+    })
+
+    acceptableRooms.forEach((item) => {
+        document.write(`Для факультета ${facultyName} подходит аудитория: ${item.crName}<br>Количество мест: ${item.pAmount}<br><hr>`);
+    });
+
+    acceptableRooms = [];
+}
+
+getRoomByFacl("mathematics");
+getRoomByFacl("physics");
+
+document.write(`<hr><hr>`);
+
+
+/*Функция сортировки аудиторий по количеству мест;*/
+
+function sortByPlacesAmount(arr) {
+    arr.sort((a, b) => a.pAmount > b.pAmount ? -1 : 1);
+    arr.forEach((item) => {
+        document.write(`Аудитория: ${item.crName} имеет количество мест: ${item.pAmount}<br><hr>`);
+    });
+}
+
+sortByPlacesAmount(classroomsList);
+
+document.write(`<hr><hr>`);
+
+/*Функция сортировки аудиторий по названию (по алфавиту).*/
+
+function sortByAlfabet(arr) {
+    arr.sort((a, b) => a.crName < b.crName ? -1 : 1);
+    arr.forEach((item) => {
+        document.write(`Аудитория: ${item.crName}<br>Количество мест: ${item.pAmount}<br>Факультет: ${item.faculty}<br><hr>`);
+    });
+}
+
+sortByAlfabet(classroomsList);
+
+document.write(`<hr><hr>`);
+
+
+/*Вывод на экран только тех аудиторий, которые подходят для переданной группы. Объект-группа состоит из названия, количества студентов и названия факультета;*/
+
+let someGroup = {};
+
+function createGroupObj(groupName, studentsAmount, facultyName) {
+
+    someGroup = {
+        groupName: groupName,
+        studentsAmount: studentsAmount,
+        facultyName: facultyName
+    }
+}
+
+createGroupObj("group413", 14, "chemistry" );
