@@ -1,47 +1,85 @@
 /*1. Создать массив «Список покупок». Каждый элемент массива является объектом, который содержит название продукта, необходимое количество и куплен или нет. Написать несколько функций для работы с таким массивом.*/
 
 
-let shoppingList = [];
+// let shoppingList = [];
 
-function newPurchase(product, amount, isBought) {
+// function newPurchase(product, amount, isBought) {
 
-    let purchase = {
-            product: product,
-            amount: amount,
-            isBought: isBought
-    }
+//     let purchase = {
+//             product: product,
+//             amount: amount,
+//             isBought: isBought
+//     }
 
-    shoppingList.push(purchase);
-}
+//     shoppingList.push(purchase);
+// }
 
-newPurchase("lemon", 2, true);
-newPurchase("bread", 1, false);
-newPurchase("salt", 5, false);
-newPurchase("water", 4, true);
-newPurchase("bread", 1, false);
-newPurchase("meat", 3, false);
+// newPurchase("lemon", 2, true);
+// newPurchase("bread", 1, false);
+// newPurchase("salt", 5, false);
+// newPurchase("water", 4, true);
+// newPurchase("meat", 3, false);
 
 
 /*Вывод всего списка на экран таким образом, чтобы сначала шли некупленные продукты, а потом – купленные.*/
 
-function sortByIsBought(arr) {
-    arr.sort((a) => a.isBought === false ? -1 : 1);
-    arr.forEach(item => {
-        document.write(`Продукт: ${item.product}<br>Количество: ${item.amount}<br>Куплен или нет: ${item.isBought}<br><hr>`);
-    });
-}
+// function sortByIsBought(arr) {
+//     arr.sort((a) => a.isBought === false ? -1 : 1);
+//     arr.forEach(item => {
+//         document.write(`Продукт: ${item.product}<br>Количество: ${item.amount}<br>Куплен или нет: ${item.isBought}<br><hr>`);
+//     });
+// }
 
-sortByIsBought(shoppingList);
+// sortByIsBought(shoppingList);
 
-document.write(`<hr><hr>`);
-
-
+// document.write(`<hr><hr>`);
 
 
 /*Добавление покупки в список. Учтите, что при добавлении покупки с уже существующим в списке продуктом, необходимо увеличивать количество в существующей покупке, а не добавлять новую.*/
 
+// let newPurch = {};
+
+// function someNewPurch(product, amount, isBought) {
+
+//     newPurch = {
+//         product: product,
+//         amount: amount,
+//         isBought: isBought
+//     }
+
+// }
+
+
+
+// function addNewPurch(arr, obj) {
+//     arr.find((item) => {
+//         if(item.product == obj.product) {
+//             item.amount += obj.amount;
+//         }
+//     })
+//     /*я хз*/
+// }
+
+// someNewPurch("bread", 1, false);
+// addNewPurch(shoppingList, newPurch);
+
 
 /*Покупка продукта. Функция принимает название продукта и отмечает его как купленный.*/
+
+
+// function buyProduct(arr, prodName) {
+//     arr.forEach((item) => {
+//         if(item.product === prodName) {
+//             item.isBought === true;
+//         }
+//     })
+
+//     return shoppingList;    /*я хз*/
+// }
+
+// buyProduct(shoppingList, "salt");
+// console.log(shoppingList);
+
 
 
 
