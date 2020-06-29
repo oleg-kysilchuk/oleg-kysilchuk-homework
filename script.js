@@ -1,86 +1,47 @@
-/*1. Создать массив «Список покупок». Каждый элемент массива является объектом, который содержит название продукта, необходимое количество и куплен или нет. Написать несколько функций для работы с таким массивом.
+/*1. Создать массив «Список покупок». Каждый элемент массива является объектом, который содержит название продукта, необходимое количество и куплен или нет. Написать несколько функций для работы с таким массивом.*/
 
 
-Добавление покупки в список. Учтите, что при добавлении покупки с уже существующим в списке продуктом, необходимо увеличивать количество в существующей покупке, а не добавлять новую.
+let shoppingList = [];
 
-Покупка продукта. Функция принимает название продукта и отмечает его как купленный.*/
+function newPurchase(product, amount, isBought) {
 
+    let purchase = {
+            product: product,
+            amount: amount,
+            isBought: isBought
+    }
 
-// function purchase(product, amount, isBought) {
-//     this.product = product;
-//     this.amount = amount;
-//     this.isBought = isBought;
-// }
+    shoppingList.push(purchase);
+}
 
-// function createObj(product, amount, isBought) {
-//     let item = new purchase(product, amount, isBought);
-//     shoppingList.push(item);
-// }
-
-// createObj("lemon", 2, true);
-// createObj("bread", 1, false);
-// createObj("salt", 5, true);
-// createObj("water", 4, true);
-// createObj("meat", 3, false);
-
-
-
-// let shoppingList = [];
-
-// function newPurchase(product, amount, isBought) {
-
-//     let purchase = {
-//             product: product,
-//             amount: amount,
-//             isBought: isBought
-//     }
-
-//     shoppingList.push(purchase);
-// }
-
-// newPurchase("lemon", 2, true);
-// newPurchase("bread", 1, false);
-// newPurchase("salt", 5, false);
-// newPurchase("water", 4, true);
-// newPurchase("bread", 1, false);
-// newPurchase("meat", 3, false);
-
-
-// function addNewPurch(product, amount, isBought){
-
-//     let purchase = newPurchase(product, amount, isBought);
-
-//     shoppingList.find((item) => {
-//         if(item.product === newPurchase.product) {
-//             item.amount += newPurchase.amount;
-//         } else{
-//             shoppingList.push(purchase);
-//         } 
-//       });
-// }
-
-// addNewPurch("sugar", 1, false);
-// addNewPurch("salt", 2, false);
-
-
-// const addToShopList = prodDef => {  // при добавлении покупки с уже существующим в списке продуктом, необходимо увеличивать количество в существующей покупке, а не добавлять новую
-//     const prod = shopList.find(prod => prod.pName === prodDef.pName); 
-//     if (!prod) return shopList.push(new Product(prodDef)); 
-//     prod.amount += prodDef.amount; 
-//   }; 
+newPurchase("lemon", 2, true);
+newPurchase("bread", 1, false);
+newPurchase("salt", 5, false);
+newPurchase("water", 4, true);
+newPurchase("bread", 1, false);
+newPurchase("meat", 3, false);
 
 
 /*Вывод всего списка на экран таким образом, чтобы сначала шли некупленные продукты, а потом – купленные.*/
 
-// function sortByIsBought(arr) {
-//     arr.sort((a) => a.isBought === false ? -1 : 1);
-// }
+function sortByIsBought(arr) {
+    arr.sort((a) => a.isBought === false ? -1 : 1);
+    arr.forEach(item => {
+        document.write(`Продукт: ${item.product}<br>Количество: ${item.amount}<br>Куплен или нет: ${item.isBought}<br><hr>`);
+    });
+}
 
-// sortByIsBought(shoppingList);
+sortByIsBought(shoppingList);
 
-// console.table(shoppingList);
+document.write(`<hr><hr>`);
 
 
+
+
+/*Добавление покупки в список. Учтите, что при добавлении покупки с уже существующим в списке продуктом, необходимо увеличивать количество в существующей покупке, а не добавлять новую.*/
+
+
+/*Покупка продукта. Функция принимает название продукта и отмечает его как купленный.*/
 
 
 
@@ -169,100 +130,115 @@
 
 
 
+
 /* 4.Создать массив аудиторий академии. Объект-аудитория состоит из названия, количества посадочных мест (от 10 до 20) и названия факультета, для которого она предназначена. Написать несколько функций для работы с ним:*/
 
-let classroomsList = [];
+// let classroomsList = [];
 
-function newClassroom(crName, pAmount, faculty) {
+// function newClassroom(crName, pAmount, faculty) {
 
-    let classroom = {
-            crName: crName,
-            pAmount: pAmount,
-            faculty: faculty
-    }
+//     let classroom = {
+//             crName: crName,
+//             pAmount: pAmount,
+//             faculty: faculty
+//     }
 
-    classroomsList.push(classroom);
-}
+//     classroomsList.push(classroom);
+// }
 
-newClassroom("gamma", 10, "physics");
-newClassroom("alpha", 20, "mathematics");
-newClassroom("beta", 15, "chemistry");
-newClassroom("delta", 12, "physics");
-newClassroom("zeta", 17, "mathematics");
-newClassroom("echo", 16, "chemistry");
+// newClassroom("gamma", 10, "physics");
+// newClassroom("alpha", 20, "mathematics");
+// newClassroom("beta", 15, "chemistry");
+// newClassroom("delta", 12, "physics");
+// newClassroom("zeta", 17, "mathematics");
+// newClassroom("echo", 16, "chemistry");
 
 
-/*Вывод на экран всех аудиторий;*/
+// /*Вывод на экран всех аудиторий;*/
 
-classroomsList.forEach((item) => {
-    document.write(`Аудитория: ${item.crName}<br>Количество мест: ${item.pAmount}<br>Факультет: ${item.faculty}<br><hr>`);
-});
+// classroomsList.forEach((item) => {
+//     document.write(`Аудитория: ${item.crName}<br>Количество мест: ${item.pAmount}<br>Факультет: ${item.faculty}<br><hr>`);
+// });
 
-document.write(`<hr><hr>`);
+// document.write(`<hr><hr>`);
 
-/*Вывод на экран аудиторий для указанного факультета;*/
+// /*Вывод на экран аудиторий для указанного факультета;*/
 
-function getRoomByFacl(facultyName) {
+// function getRoomByFacl(facultyName) {
     
-    let acceptableRooms = [];
+//     let acceptableRooms = [];
 
-    classroomsList.find((item) => {
-        if(item.faculty == facultyName) {
-            acceptableRooms.push(item);
-        }
-    })
+//     classroomsList.find((item) => {
+//         if(item.faculty == facultyName) {
+//             acceptableRooms.push(item);
+//         }
+//     })
 
-    acceptableRooms.forEach((item) => {
-        document.write(`Для факультета ${facultyName} подходит аудитория: ${item.crName}<br>Количество мест: ${item.pAmount}<br><hr>`);
-    });
+//     acceptableRooms.forEach((item) => {
+//         document.write(`Для факультета ${facultyName} подходит аудитория: ${item.crName}<br>Количество мест: ${item.pAmount}<br><hr>`);
+//     });
 
-    acceptableRooms = [];
-}
+//     acceptableRooms = [];
+// }
 
-getRoomByFacl("mathematics");
-getRoomByFacl("physics");
+// getRoomByFacl("mathematics");
+// getRoomByFacl("physics");
 
-document.write(`<hr><hr>`);
-
-
-/*Функция сортировки аудиторий по количеству мест;*/
-
-function sortByPlacesAmount(arr) {
-    arr.sort((a, b) => a.pAmount > b.pAmount ? -1 : 1);
-    arr.forEach((item) => {
-        document.write(`Аудитория: ${item.crName} имеет количество мест: ${item.pAmount}<br><hr>`);
-    });
-}
-
-sortByPlacesAmount(classroomsList);
-
-document.write(`<hr><hr>`);
-
-/*Функция сортировки аудиторий по названию (по алфавиту).*/
-
-function sortByAlfabet(arr) {
-    arr.sort((a, b) => a.crName < b.crName ? -1 : 1);
-    arr.forEach((item) => {
-        document.write(`Аудитория: ${item.crName}<br>Количество мест: ${item.pAmount}<br>Факультет: ${item.faculty}<br><hr>`);
-    });
-}
-
-sortByAlfabet(classroomsList);
-
-document.write(`<hr><hr>`);
+// document.write(`<hr><hr>`);
 
 
-/*Вывод на экран только тех аудиторий, которые подходят для переданной группы. Объект-группа состоит из названия, количества студентов и названия факультета;*/
+// /*Функция сортировки аудиторий по количеству мест;*/
 
-let someGroup = {};
+// function sortByPlacesAmount(arr) {
+//     arr.sort((a, b) => a.pAmount > b.pAmount ? -1 : 1);
+//     arr.forEach((item) => {
+//         document.write(`Аудитория: ${item.crName} имеет количество мест: ${item.pAmount}<br><hr>`);
+//     });
+// }
 
-function createGroupObj(groupName, studentsAmount, facultyName) {
+// sortByPlacesAmount(classroomsList);
 
-    someGroup = {
-        groupName: groupName,
-        studentsAmount: studentsAmount,
-        facultyName: facultyName
-    }
-}
+// document.write(`<hr><hr>`);
 
-createGroupObj("group413", 14, "chemistry" );
+// /*Функция сортировки аудиторий по названию (по алфавиту).*/
+
+// function sortByAlfabet(arr) {
+//     arr.sort((a, b) => a.crName < b.crName ? -1 : 1);
+//     arr.forEach((item) => {
+//         document.write(`Аудитория: ${item.crName}<br>Количество мест: ${item.pAmount}<br>Факультет: ${item.faculty}<br><hr>`);
+//     });
+// }
+
+// sortByAlfabet(classroomsList);
+
+// document.write(`<hr><hr>`);
+
+
+// /*Вывод на экран только тех аудиторий, которые подходят для переданной группы. Объект-группа состоит из названия, количества студентов и названия факультета;*/
+
+// let someGroup = {};
+
+// function createGroupObj(groupName, studentsAmount, facultyName) {
+
+//     someGroup = {
+//         groupName: groupName,
+//         studentsAmount: studentsAmount,
+//         facultyName: facultyName
+//     }
+// }
+
+
+// function getClassroomForGroup(arr,obj) {
+//     arr.forEach((item) => {
+//         if(item.faculty == obj.facultyName && item.pAmount >= obj.studentsAmount) {
+//             document.write(`Для данной группы подходит аудитория: ${item.crName}<br>Количество мест: ${item.pAmount}<br>Факультет: ${item.faculty}<br><hr>`);
+//         }
+//     })
+
+// }
+
+// createGroupObj("group413", 12, "chemistry" );
+// getClassroomForGroup(classroomsList, someGroup);
+
+
+// document.write(`<hr><hr>`);
