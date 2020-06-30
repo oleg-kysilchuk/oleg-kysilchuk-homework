@@ -58,10 +58,53 @@ document.write(`Длина окружности: ~${Math.round(c.circleLength())
 метод для печати (метод принимает строку и выводит текст соответствующим цветом; текст выводится до тех пор, пока в маркере есть чернила; один не пробельный символ – это 0,5% чернил в маркере).
 Реализовать класс, описывающий заправляющийся маркер, унаследовав его от простого маркера и добавив метод для заправки маркера.
 
-Продемонстрировать работу написанных методов. 
+Продемонстрировать работу написанных методов.*/ 
 
-3) Реализовать класс Employee, описывающий работника, и создать массив работников банка.
+// prinText(text) {
+//     let txt = "";
+//     for(let i = 0; i < this.ink/0.005;i++) {
+//         txt += text[i];
+//         if(txt.length == text.length) {
+//             break;
+//         }
+        
+        
+//     }
+//     let spc = txt.split(" ").length-1;
+//     let a = this.ink + spc*0.005;
 
-Реализовать класс EmpTable для генерации HTML-кода таблицы со списком работников банка. Массив работников необходимо передавать через конструктор, а получать HTML-код с помощью метода getHtml().
+//     for(let j = txt.length; j < (a/0.005)-1; j++){
+//         txt += text[j];
+//         if(txt.length + spc == text.length) {
+//             break;
+//         }
+//     }
+    
+//     document.write(`<p style="color: ${this.color}">${txt}<p>`);
+// }
 
-Создать объект класса EmpTable и вывести на экран результат работы метода getHtml().*/
+
+class Marker {
+    constructor(color, amount) {
+        this.color = color;
+        this.ink = amount;
+    }
+
+    prinText(text) {
+        let txt = "";
+        for(let i = 0; i < this.ink/0.005;i++) {
+            txt += text[i];
+            if (text[i] == " ") {
+                this.ink + 0.005;
+            } else if(txt.length == text.length) {
+                break;
+            }
+        }
+        
+        document.write(`<p style="color: ${this.color}">${txt}<p>`);
+    }
+}
+
+let m = new Marker("black", 0.15)
+
+m.prinText("Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, impedit hic natus nemo fuga eum sint eius voluptate officiis esse porro omnis aspernatur expedita quae vitae voluptatibus voluptatem adipisci alias id corrupti soluta asperiores temporibus doloremque harum. Asperiores odio placeat quod iure necessitatibus, a quia magnam fuga suscipit optio numquam, nisi totam enim beatae amet impedit ipsam consectetur velit facilis excepturi, fugit reiciendis et exercitationem? Sint maiores placeat, eveniet accusamus ab a optio voluptatibus eos veritatis explicabo iusto dolorum voluptates porro quidem hic at fuga. Doloremque nihil magnam, obcaecati facilis voluptatum est, soluta in minus fugiat, neque necessitatibus recusandae nulla.");
