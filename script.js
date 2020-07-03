@@ -106,4 +106,4 @@ class RefillMarker extends Marker {
 let r = new RefillMarker("black", m.ink);
 r.refillInk(80);
 
-document.write(`<p>Маркер был заправлен до: ${r.ink}</p>`);
+document.write(`<p>Маркер был заправлен до: ${r.ink}%</p>`);
