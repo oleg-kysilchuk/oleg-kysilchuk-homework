@@ -97,7 +97,9 @@ function getPlaylist() {
 
 /*2. Создать HTML-страницу с кнопкой "Открыть" и модальным окном. На модальном окне должен быть текст и кнопка "Закрыть". Изначально модальное окно не отображается. При клике на кнопку "Открыть" появляется модальное окно, на кнопку "Закрыть" – исчезает.*/
 
-const btn = document.getElementsByTagName('button');
+/*баттони з індексами прост шоб задавати класси через дом-методи і шоб не робити окрему html сторінку на кожне завдання*/
+
+const btn = document.getElementsByTagName('button');  
 btn[1].classList.add('btn-open');
 btn[1].textContent = 'Open Modal';
 
@@ -139,22 +141,34 @@ trafLights.classList.add('container');
 document.body.append(trafLights);
 
 const red = document.createElement('div');
-red.classList.add('light');
 red.classList.add('red');
+red.classList.add('light');
 trafLights.append(red);
 
 const yellow = document.createElement('div');
-yellow.classList.add('light');
 yellow.classList.add('yellow');
+yellow.classList.add('light');
 trafLights.append(yellow);
 
 const green = document.createElement('div');
-green.classList.add('light');
 green.classList.add('green');
+green.classList.add('light');
 trafLights.append(green);
 
+let c = trafLights.children;
+let i = 0;
 
 function switchColor() {
-    
-
+        if(i > 2) {
+            i = 0;
+            for(let j = 0; j < c.length; j++) {
+                c[j].classList.add('light');
+            }
+        } else if(i != 0) {
+            c[i-1].classList.add('light');
+        }
+        c[i].classList.remove('light');
+        i++;
 }
+
+/*не хотів робити просто порівняння классів через іф-елси типу якшо червоне то не жовте і не зелене ітд чи світч, такшо якось так ¯\_(ツ)_/¯. і шось у мене не виходить "виключити" світлофор. взагалі був варіант, але тоді він працює тільки 1 круг*/

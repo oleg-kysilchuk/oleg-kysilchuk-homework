@@ -90,14 +90,23 @@ ol {
 
 .red {
     background-color: red;
+    width: 100%;
+    height: 33.333%;
+    border-radius: 50%;
 }
 
 .yellow {
     background-color: yellow;
+    width: 100%;
+    height: 33.333%;
+    border-radius: 50%;
 }
 
 .green {
     background-color: green;
+    width: 100%;
+    height: 33.333%;
+    border-radius: 50%;
 }
 
 .light {
