@@ -1,0 +1,14 @@
+.div-text,
+.area {
+    width: 300px;
+    height: 100px;
+    padding: 1%;
+    background-color: gray;
+    font-size: 30px;
+    color: wheat;
+}
+
+.area {
+    background-color: yellow;
+    color: red;
+}
