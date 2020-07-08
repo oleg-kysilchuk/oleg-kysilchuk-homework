@@ -5,25 +5,30 @@ td.forEach((item) => {
     item.innerText = Math.floor(Math.random() * 1000);
 })
 
-/*ЩЕ НЕ ГОТОВЕ */
+const allTh = document.querySelectorAll('thead tr th');
+
+const bodyTr = document.querySelectorAll('tbody tr');
+
+const tablebody = document.querySelector('tbody');
 
 
-// // for(let i = 0;i < td.length;i++) {
-// //     td[i].innerText = Math.floor(Math.random() * 1000);
-// // }
 
-// const trs = document.querySelectorAll('tr');
-// for(let i = 0;i < trs.length;i++) {
-//     // trs[i].setAttribute('data-num', '' + i);
-//     let tds = trs[i].querySelectorAll('td');
-// }
+allTh.forEach((item) => {
+    item.addEventListener('click', function() {
+        let sortedCells = [...bodyTr].sort(function(a, b) {
+            return a.children[0].innerHTML - b.children[0].innerHTML;
+        });
+        
+        tablebody.innerHTML = '';
+        
+        for (let tr of sortedCells) {
+            tablebody.appendChild(tr);
+        }
+    });
+})
 
 
-// const th = document.querySelectorAll('th');
+/*всьо здаюсь.*/
 
-// th.forEach((item) => {
-//     item.addEventListener('click', function(e){
-//         let a = e.target;
-//         console.log(a.children);
-//     })
-// })
+
+
