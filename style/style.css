@@ -1,0 +1,138 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+.content {
+  padding: 2% 0 1%;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ffffff;
+}
+
+.title-block {
+  width: 100%;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.title-block__title {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #303030;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.title-block__description {
+  margin: 0 auto;
+  width: 900px;
+  font-size: 56px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  line-height: 56px;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.title-block__triangle {
+  position: absolute;
+  top: 115px;
+  left: 280px;
+}
+
+.title-block__plus {
+  position: absolute;
+  top: -15px;
+  right: 420px;
+}
+
+.glide {
+  padding: 30px 0px;
+}
+
+.glide__arrow {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #000000;
+  border-radius: 50%;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.glide__arrow:hover {
+  border: 1px solid #000000;
+}
+
+.glide__arrow--right::before {
+  position: relative;
+  content: "";
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  border-right: 1px solid black;
+  border-top: 1px solid black;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  margin-right: 0.5em;
+}
+
+.glide__arrow--left::before {
+  position: relative;
+  content: "";
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  border-right: 1px solid black;
+  border-top: 1px solid black;
+  -webkit-transform: rotate(225deg);
+          transform: rotate(225deg);
+  margin-right: -0.5em;
+}
+
+.glide__slide {
+  width: 280px;
+}
+
+.glide__slide img {
+  width: 100%;
+}
+
+.article {
+  position: relative;
+}
+
+.article__title {
+  position: absolute;
+  left: 25px;
+  bottom: 50px;
+  font-size: 20px;
+  line-height: 16px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  word-spacing: 5px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+.article__author {
+  position: absolute;
+  left: 25px;
+  bottom: 30px;
+  font-size: 7px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: left;
+}
+/*# sourceMappingURL=style.css.map */

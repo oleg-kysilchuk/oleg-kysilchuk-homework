@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800;900&display=swap" rel="stylesheet">
+  <!-- Glide -->
+  <link rel="stylesheet" href="./style/glide.core.css">
+  <link rel="stylesheet" href="./style/glide.theme.css">
+  <!-- Style -->
+  <link rel="stylesheet" href="./style/style.css">
+  <title>Slider</title>
+</head>
+<body>
+  <section class="content">
+    <div class="title-block">
+      <p class="title-block__title">our featured work</p>
+      <h1 class="title-block__description">we create engaging experiences through creativity & craft</h1>
+      <img class="title-block__triangle" src="./assets/triangle.png" alt="tr-icon">
+      <img class="title-block__plus" src="./assets/plus.png" alt="pl-icon">
+    </div>
+
+    <div class="glide">
+
+      <div class="glide__track" data-glide-el="track">
+
+        <div class="glide__slides">
+
+          <div class="glide__slide article">
+            <img class="article__image" src="./assets/image-1.jpg" alt="img">
+            <p class="article__title">apex magazine june issue</p>
+            <span class="article__author">by fabrizio morra</span>
+          </div>
+
+          <div class="glide__slide">
+            <img src="./assets/image-2.jpg" alt="img">
+          </div>
+
+          <div class="glide__slide">
+            <img src="./assets/image-3.jpg" alt="img">
+          </div>
+
+          <div class="glide__slide">
+            <img src="./assets/image-4.jpg" alt="img">
+          </div>
+
+          <div class="glide__slide">
+            <img src="./assets/image-3.jpg" alt="img">
+          </div>
+
+          <div class="glide__slide">
+            <img src="./assets/image-2.jpg" alt="img">
+          </div>
+
+          <div class="glide__slide">
+            <img src="./assets/image-4.jpg" alt="img">
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="glide__arrows" data-glide-el="controls">
+        <button class="glide__arrow glide__arrow--left" data-glide-dir="<"></button>
+        <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <script src="./script/glide.min.js"></script>
+  <script src="./script/script.js"></script>
+  
+</body>
+</html>
