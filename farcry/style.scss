@@ -1,0 +1,287 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+}
+
+.wrap {
+    padding: 3%;
+    height: 100vh;
+    background-image: url("./assets/background.jpg");
+    background-size: cover;
+}
+
+.content {
+    margin: 0 auto;
+    width: 600px;
+    height: 540px;
+}
+
+.page-header {
+    height: 115px;
+    background-color: #2b3040;
+}
+
+.nav-tabs {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    color: #b7bacd;
+
+    &__item {
+        width: 145px;
+        padding: 30px 0px 33px;
+        text-align: center;
+        cursor: pointer;
+
+        &:hover {
+            color: #dbdbdb;
+        }
+
+        &__icon {
+            display: inline-block;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        &__text {
+            font-size: 16px;
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+    }
+}
+
+
+
+
+.tab-1 {
+    padding: 55px 40px 60px;
+    height: 425px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #212534;
+    
+
+    &__product {
+        margin-right: 40px;
+        margin-bottom: 20px;
+        transition: .2s linear;
+
+        &:hover {
+            transform: scale(1.03);
+            box-shadow: 0px 0px 5px 0px #ffffff;
+        }
+    }
+
+    &__rating {
+        transform: scale(-1, 1);
+        float: left;
+        margin-left: 6px;
+    
+        &__star {
+          display: none;
+    
+          &:checked ~ label {
+            color: #ffdd3f;
+          }
+        }
+    
+        &__rate {
+          color: #ececec;
+          font-size: 18px;
+          margin-right: 6px;
+        }
+      }
+
+    
+    
+    &__info {
+        color: #ffffff;
+        font-weight: 400;
+        position: relative;
+
+        &__title {
+            margin-top: 3px;
+            font-size: 32px;
+            margin-bottom: 7px;
+        }
+
+        &__release-date {
+            font-size: 15px;
+            font-weight: 400;
+            letter-spacing: 0px;
+            text-transform: capitalize;
+            margin-bottom: 40px;
+        }
+
+        &__description {
+            font-size: 16px;
+            line-height: 22px;
+            color: #b7bacd;
+            margin-bottom: 60px;
+            letter-spacing: 0px;
+        }
+
+        &__rate {
+            position: absolute;
+            top: -25px;
+            right: -10px;
+            z-index: 1;
+
+            .ring {
+                width: 77px;
+                height: 77px;
+                border: 2px solid #787c9b;
+                border-radius: 50%;
+                position: absolute;
+                top: 21px;
+                right: 22px;
+                z-index: -1;
+            
+                &__rate {
+                    font-size: 20px;
+                    color: #787c9b;
+                    margin: 23px;
+                }
+            }
+
+            .progress-ring__circle {
+                stroke-dasharray: 10 20;
+                transition: stroke-dashoffset 0.35s;
+                transition: stroke-dashoffset 0.35s;
+                transform: rotate(-90deg);
+                transform-origin: 50% 50%;
+                stroke-dasharray: 238 238;
+                stroke-dashoffset: 100;
+            }
+        }
+
+        &__buy-box {
+            display: flex;
+            flex: row;
+            justify-content: space-between;
+        }
+
+        &__discount {
+            font-size: 12px;
+            color: #fedc3f;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        &__price {
+            font-size: 32px;
+            text-align: left;
+        }
+
+        &__buy-btn {
+            width: 165px;
+            height: 55px;
+            border: 0;
+            outline: 0;
+            background-color: #13e28d;
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: bold;
+            text-transform: uppercase;
+            border-radius: 2px;
+
+            &:hover {
+                background-color: #ffffff;
+                color: #13e28d;
+            }
+
+            &:active {
+                transform: scale(0.97);
+            }
+        }
+    }
+}
+
+
+
+.tab-2 {
+    padding: 7% 0 7% 20%;
+    position: relative;
+    height: 425px;
+    background-color: #212534;
+    display: none;
+
+    &__ring {
+        width: 344px;
+        height: 344px;
+        border: 8px solid #787c9b;
+        border-radius: 50%;
+        z-index: 0;
+    
+        &__rate {
+            font-size: 90px;
+            color: #fedc3f;
+            margin: 31%;
+        }
+    }
+    &__rate-circle {
+        z-index: 1;
+        position: absolute;
+        top: 41px;
+
+        .progress-ring__circle {
+            stroke-dasharray: 10 20;
+            transition: stroke-dashoffset 0.35s;
+            transition: stroke-dashoffset 0.35s;
+            transform: rotate(-90deg);
+            transform-origin: 50% 50%;
+            stroke-dasharray: 1056 1056;
+            stroke-dashoffset: 422;
+        }
+    }
+}
+
+
+
+.tab-3 {
+    padding-top: 25%;
+    height: 425px;
+    background-color: #212534;
+    display: none;
+
+    &__where-btn {
+        display: block;
+        margin: 0 auto;
+        width: 250px;
+        height: 80px;
+        border: 0;
+        outline: 0;
+        background: linear-gradient(135deg, #f2f6f8 0%,#d8e1e7 50%,#b5c6d0 51%,#e0eff9 100%);
+        border-radius: 25px;
+        font-size: 40px;
+        color: #fedc3f;
+        text-transform: uppercase;
+        font-weight: 600;
+        box-shadow: 0px 0px 5px 0px #ffffff;
+        transition: .3 linear;
+
+        &:hover {
+            transform: scale(1.03);
+            transition: .3 linear;
+        }
+
+        &:active {
+            transform: scale(0.97);
+            transition: .3 linear;
+        }
+    }
+
+    
+}
+
+.nav-tabs .current {
+    color: white;
+    border-bottom: 2px solid #ffffff;
+}

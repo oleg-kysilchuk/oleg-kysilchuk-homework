@@ -1,0 +1,313 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.wrap {
+  padding: 3%;
+  height: 100vh;
+  background-image: url("./assets/background.jpg");
+  background-size: cover;
+}
+
+.content {
+  margin: 0 auto;
+  width: 600px;
+  height: 540px;
+}
+
+.page-header {
+  height: 115px;
+  background-color: #2b3040;
+}
+
+.nav-tabs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: #b7bacd;
+}
+
+.nav-tabs__item {
+  width: 145px;
+  padding: 30px 0px 33px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.nav-tabs__item:hover {
+  color: #dbdbdb;
+}
+
+.nav-tabs__item__icon {
+  display: inline-block;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.nav-tabs__item__text {
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.tab-1 {
+  padding: 55px 40px 60px;
+  height: 425px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #212534;
+}
+
+.tab-1__product {
+  margin-right: 40px;
+  margin-bottom: 20px;
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
+}
+
+.tab-1__product:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+  -webkit-box-shadow: 0px 0px 5px 0px #ffffff;
+          box-shadow: 0px 0px 5px 0px #ffffff;
+}
+
+.tab-1__rating {
+  -webkit-transform: scale(-1, 1);
+          transform: scale(-1, 1);
+  float: left;
+  margin-left: 6px;
+}
+
+.tab-1__rating__star {
+  display: none;
+}
+
+.tab-1__rating__star:checked ~ label {
+  color: #ffdd3f;
+}
+
+.tab-1__rating__rate {
+  color: #ececec;
+  font-size: 18px;
+  margin-right: 6px;
+}
+
+.tab-1__info {
+  color: #ffffff;
+  font-weight: 400;
+  position: relative;
+}
+
+.tab-1__info__title {
+  margin-top: 3px;
+  font-size: 32px;
+  margin-bottom: 7px;
+}
+
+.tab-1__info__release-date {
+  font-size: 15px;
+  font-weight: 400;
+  letter-spacing: 0px;
+  text-transform: capitalize;
+  margin-bottom: 40px;
+}
+
+.tab-1__info__description {
+  font-size: 16px;
+  line-height: 22px;
+  color: #b7bacd;
+  margin-bottom: 60px;
+  letter-spacing: 0px;
+}
+
+.tab-1__info__rate {
+  position: absolute;
+  top: -25px;
+  right: -10px;
+  z-index: 1;
+}
+
+.tab-1__info__rate .ring {
+  width: 77px;
+  height: 77px;
+  border: 2px solid #787c9b;
+  border-radius: 50%;
+  position: absolute;
+  top: 21px;
+  right: 22px;
+  z-index: -1;
+}
+
+.tab-1__info__rate .ring__rate {
+  font-size: 20px;
+  color: #787c9b;
+  margin: 23px;
+}
+
+.tab-1__info__rate .progress-ring__circle {
+  stroke-dasharray: 10 20;
+  -webkit-transition: stroke-dashoffset 0.35s;
+  transition: stroke-dashoffset 0.35s;
+  transition: stroke-dashoffset 0.35s;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  stroke-dasharray: 238 238;
+  stroke-dashoffset: 100;
+}
+
+.tab-1__info__buy-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: row;
+      -ms-flex: row;
+          flex: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.tab-1__info__discount {
+  font-size: 12px;
+  color: #fedc3f;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.tab-1__info__price {
+  font-size: 32px;
+  text-align: left;
+}
+
+.tab-1__info__buy-btn {
+  width: 165px;
+  height: 55px;
+  border: 0;
+  outline: 0;
+  background-color: #13e28d;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 2px;
+}
+
+.tab-1__info__buy-btn:hover {
+  background-color: #ffffff;
+  color: #13e28d;
+}
+
+.tab-1__info__buy-btn:active {
+  -webkit-transform: scale(0.97);
+          transform: scale(0.97);
+}
+
+.tab-2 {
+  padding: 7% 0 7% 20%;
+  position: relative;
+  height: 425px;
+  background-color: #212534;
+  display: none;
+}
+
+.tab-2__ring {
+  width: 344px;
+  height: 344px;
+  border: 8px solid #787c9b;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.tab-2__ring__rate {
+  font-size: 90px;
+  color: #fedc3f;
+  margin: 31%;
+}
+
+.tab-2__rate-circle {
+  z-index: 1;
+  position: absolute;
+  top: 41px;
+}
+
+.tab-2__rate-circle .progress-ring__circle {
+  stroke-dasharray: 10 20;
+  -webkit-transition: stroke-dashoffset 0.35s;
+  transition: stroke-dashoffset 0.35s;
+  transition: stroke-dashoffset 0.35s;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  stroke-dasharray: 1056 1056;
+  stroke-dashoffset: 422;
+}
+
+.tab-3 {
+  padding-top: 25%;
+  height: 425px;
+  background-color: #212534;
+  display: none;
+}
+
+.tab-3__where-btn {
+  display: block;
+  margin: 0 auto;
+  width: 250px;
+  height: 80px;
+  border: 0;
+  outline: 0;
+  background: linear-gradient(135deg, #f2f6f8 0%, #d8e1e7 50%, #b5c6d0 51%, #e0eff9 100%);
+  border-radius: 25px;
+  font-size: 40px;
+  color: #fedc3f;
+  text-transform: uppercase;
+  font-weight: 600;
+  -webkit-box-shadow: 0px 0px 5px 0px #ffffff;
+          box-shadow: 0px 0px 5px 0px #ffffff;
+  -webkit-transition: .3 linear;
+  transition: .3 linear;
+}
+
+.tab-3__where-btn:hover {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
+  -webkit-transition: .3 linear;
+  transition: .3 linear;
+}
+
+.tab-3__where-btn:active {
+  -webkit-transform: scale(0.97);
+          transform: scale(0.97);
+  -webkit-transition: .3 linear;
+  transition: .3 linear;
+}
+
+.nav-tabs .current {
+  color: white;
+  border-bottom: 2px solid #ffffff;
+}
+/*# sourceMappingURL=style.css.map */

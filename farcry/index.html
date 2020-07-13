@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://i.icomoon.io/public/temp/3a7c92d5ef/UntitledProject/style.css">
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap" rel="stylesheet">
+    <!-- Style -->
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrap">
+
+        <section class="content">
+
+            <header class="page-header">
+
+                <nav class="nav-tabs">
+                    <div class="nav-tabs__item tab-btn">
+                        <span class="nav-tabs__item__icon icon-info"></span>
+                        <p class="nav-tabs__item__text">information</p>
+                    </div>
+
+                    <div class="nav-tabs__item tab-btn">
+                        <span class="nav-tabs__item__icon icon-heart"></span>
+                        <p class="nav-tabs__item__text">ratings info</p>
+                    </div>
+
+                    <div class="nav-tabs__item tab-btn">
+                        <span class="nav-tabs__item__icon icon-cart"></span>
+                        <p class="nav-tabs__item__text">where to buy</p>
+                    </div>
+                </nav>
+
+            </header>
+
+            <div class="tabs-content">
+
+                <div class="tab-item tab-1">
+
+                    <div class="tab-1__image">
+
+                        <img class="tab-1__product" src="./assets/product.jpg" alt="far-cry-4">
+
+                        <div class="tab-1__rating">
+
+                            <input class="tab-1__rating__star" type="radio" name="rate" id="5st" value="5">
+                            <label class="tab-1__rating__rate" for="5st"><i class="fas fa-star"></i></label>
+                
+                            <input class="tab-1__rating__star" type="radio" name="rate" id="4st" value="4" checked>
+                            <label class="tab-1__rating__rate" for="4st"><i class="fas fa-star"></i></label>
+                
+                            <input class="tab-1__rating__star" type="radio" name="rate" id="3st" value="3">
+                            <label class="tab-1__rating__rate" for="3st"><i class="fas fa-star"></i></label>
+                
+                            <input class="tab-1__rating__star" type="radio" name="rate" id="2st" value="2">
+                            <label class="tab-1__rating__rate" for="2st"><i class="fas fa-star"></i></label>
+                
+                            <input class="tab-1__rating__star" type="radio" name="rate" id="1st" value="1">
+                            <label class="tab-1__rating__rate" for="1st"><i class="fas fa-star"></i></label>
+                
+                
+                          </div>
+
+                    </div>
+
+
+                    <div class="tab-1__info">
+
+                        <p class="tab-1__info__title">FarCry 4</p>
+                        
+                        <p class="tab-1__info__release-date">first released nov 17, 2014</p>
+
+                        <div class="tab-1__info__rate">
+                            <div class="ring"><p class="ring__rate">7.8</p></div>
+                            <svg class="tab-1__info__rate-circle progress-ring" height="119" width="120">
+                                <circle class="progress-ring__circle" stroke="#13e28d" stroke-width="4" fill="transparent" r="38" cx="60" cy="60"/>
+                            </svg>
+                            
+                        </div>
+
+                        <p class="tab-1__info__description">In Far Cry 4, players find themselves in Kyrat, a breathtaking, perilous and wild region of the Himalayas struggling under the regime of a despotic self-appointed king.</p>
+
+                        <div class="tab-1__info__buy-box">
+
+                            <div>
+                                <p class="tab-1__info__discount">20% off!</p>
+                                <p class="tab-1__info__price">$59.96</p>
+                            </div>
+
+                            <button class="tab-1__info__buy-btn btn">buy it now</button>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="tab-item tab-2">
+
+                    <div class="tab-2__ring">
+                        <p class="tab-2__ring__rate">7.8</p>
+                    </div>
+                    
+                    <svg class="tab-2__rate-circle progress-ring" height="365" width="365">
+                        <circle class="progress-ring__circle" stroke="#13e28d" stroke-width="14" fill="transparent" r="168" cx="192" cy="172"/>
+                    </svg>
+
+                </div>
+
+                <div class="tab-item tab-3">
+                    <button class="tab-3__where-btn" onclick="window.location.href='https://store.steampowered.com/app/298110/Far_Cry_4/';" >here</button>
+                </div>
+                
+            </div>
+
+        </section>
+
+    </div>
+    
+    <script src="./jquery-3.5.1.min.js"></script>
+    <script src="./script.js"></script>
+    <script src="https://kit.fontawesome.com/2f5f85827b.js" crossorigin="anonymous"></script>
+</body>
+</html>
