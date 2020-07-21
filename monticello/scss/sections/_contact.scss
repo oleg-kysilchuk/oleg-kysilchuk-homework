@@ -1,0 +1,129 @@
+.map-contact {
+    max-width: 1600px;
+    margin: 0 auto;
+    max-height: 700px;
+    position: relative;
+}
+
+.map {
+    width: 100%;
+    height: 700px;
+}
+
+.contact-form {
+    width: 770px;
+    height: 450px;
+    padding: 78px 55px;
+    background-color: $color-prim;
+    position: absolute;
+    top: 89.3%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-image: url("./assets/form-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    box-shadow: 0px 0px 15px 0px #b3b1b1;
+    
+
+    &__title {
+        @include text($gotham-bold, 44px, bold, $color-secnd);
+        text-transform: uppercase;
+        margin-bottom: 46px;
+        position: relative;
+
+        &:before {
+            position: absolute;
+            top: -19px;
+            left: 42.5%;
+            content: '';
+            border-top: 1px solid $color-secnd;
+            width: 100px;
+        }
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    &__info {
+        width: 51%;
+        @include text($gotham-reg, 18px, 400, $color-secnd);
+        text-align: left;
+
+        &__icon {
+            color: $color-purp;
+            margin-right: 6px;
+        }
+
+        &__address {
+            width: 100%;
+            margin-bottom: 40px;
+        }
+
+        &__phone {
+            width: 100%;
+            margin-bottom: 40px;
+        }
+
+        &__mail {
+            width: 100%;
+            margin-bottom: 40px;
+        }
+
+        &__time {
+            width: 100%;
+            margin-bottom: 40px;
+        }
+    }
+
+
+    &__form {
+        padding-right: 6px;
+        width: 49%;
+        text-align: right;
+        @include text($gotham-book, 18px, 400, $color-secnd);
+
+        &__name {
+            border: 0;
+            outline: 0;
+            border-bottom: 1px solid $color-secnd;
+            width: 97%;
+            padding-bottom: 19px;
+            margin-bottom: 40px;
+            text-transform: capitalize;
+
+            &:focus {
+                background-color: $color-prim;
+            }
+
+            &:valid {
+                background-color: $color-prim;
+            }
+        }
+
+        &__email {
+            border: 0;
+            outline: 0;
+            border-bottom: 1px solid $color-secnd;
+            width: 97%;
+            padding-bottom: 14px;
+            margin-bottom: 30px;
+
+            &:focus {
+                background-color: $color-prim;
+            }
+
+            &:valid {
+                background-color: $color-prim;
+            }
+        }
+
+
+        &__submit-btn {
+            width: 140px;
+        }
+    }
+}

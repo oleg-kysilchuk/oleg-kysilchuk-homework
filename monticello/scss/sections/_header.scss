@@ -1,0 +1,200 @@
+.page-header {
+    max-width: 1600px;
+    margin: 0 auto;
+    max-height: 800px;
+    height: 100vh;
+    position: relative;
+}
+
+.nav-box {
+    margin: 0 auto;
+    padding: 0 215px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    position: absolute;
+    top: 54px;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+
+
+    &__logo {
+        width: 241px;
+    }
+
+    &__menu {
+        width: 595px;
+
+
+        &__list {
+            padding-bottom: 6px;
+        }
+
+        &__item {
+            display: inline-block;
+            @include text($gotham-book, 14px, 400, $color-prim);
+            text-transform: uppercase;
+            margin-right: 61px;
+
+            &:nth-last-of-type(1) {
+                margin-right: 0px;
+                margin-left: 30px;
+            }
+
+            @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+                margin-right: 55px;
+            }
+
+        }
+
+        &__inp {
+            display: none;
+        }
+
+        &__link {
+            color: $color-prim;
+            text-transform: uppercase;
+            font-size: 14px;
+            padding-left: 25px;
+            position: relative;
+
+            
+            &:before {
+                position: absolute;
+                content: "";
+                top: 1px;
+                left: 0;
+                width: 8.5px;
+                height: 9px;
+                border-radius: 50%;
+                border: 1px solid $color-prim;
+                background-color: transparent;
+            }
+
+            &:link {
+                border: 0;
+                outline: 0;
+            }
+
+            &:hover:before {
+                background-color: $color-prim;
+            }
+              
+            
+        }
+    }
+
+
+    &__social {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 160px;
+        padding-bottom: 6px;
+        padding-right: 2px;
+
+        &__icons {
+            width: 38px;
+            height: 38px;
+            border: 1px solid $color-prim;
+            border-radius: 50%;
+            text-align: center;
+            padding-top: 9px;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+
+            &:link {
+                outline: 0;
+            }
+        }
+
+        &__icon {
+            color: $color-prim;
+            text-align: center;
+        }
+    }
+}
+
+
+.header-slider {
+    position: relative;
+
+    .slide-bg {
+        background-image: url("./assets/header-bg.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        outline: none;
+        border: 0;
+        height: 800px;
+    }
+    
+    .slick-prev {
+        display: none;
+    }
+
+    .slick-next {
+        position: absolute;
+        top: 91.3%;
+        left: 49.9%;
+        transform: translate(-50%, -50%);
+        width: 40px;
+        height: 39px;
+        border: 1px solid $color-prim;
+        border-radius: 50%;
+        text-align: center;
+        padding-top: 9px;
+
+        &:before {
+            position: relative;
+            content: "";
+            display: inline-block;
+            width: 5px;
+            height: 5px;
+            border-right: 1px solid $color-prim;
+            border-top: 1px solid $color-prim;
+            transform: rotate(135deg);
+            margin-bottom: 10px;
+        }
+    }
+
+    .slick-dots {
+        width: 10px;
+        top: 293px;
+        right: 47px;
+        padding-bottom: 18px;
+    }
+
+    .slick-dots li {
+        display: block;
+        margin-bottom: 41px;
+    }
+}
+
+.slide {
+    padding: 296px 0px 0px;
+    height: 800px;
+    text-align: center;
+    outline: none;
+    background: linear-gradient( 45deg, rgba(85,183,255, 0.9) 0%, rgba(126,90,255, 0.9) 100%);
+
+    &__title {
+        @include text($gotham-bold, 80px, bold, $color-prim);
+        text-transform: uppercase;
+        letter-spacing: 8px;
+        margin-bottom: 17px;
+    }
+
+    &__subtitle {
+        @include text($gotham-book, 20px, 300, $color-prim);
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        margin-bottom: 50px;
+    }
+
+}
