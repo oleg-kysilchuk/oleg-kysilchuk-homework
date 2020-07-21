@@ -22,7 +22,7 @@ $(document).ready(function(){
       swipe: true,
       swipeToSlide: true,
       autoplay: true,
-      autoplaySpeed: 4000,
+      autoplaySpeed: 2000,
     });
 
 
