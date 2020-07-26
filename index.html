@@ -9,19 +9,27 @@
 <body>
 
     <div class="container">
-<!-- action="http://www.omdbapi.com/?apikey=c549391b&" method="POST" -->
+
+        <div class="search-type">
+            <p class="optional">Check one type (optional)</p>
+
+            <div class="types">
+                <button class="type-btn" data-type="movie">movies</button>
+                <button class="type-btn" data-type="series">series</button>
+                <button class="type-btn" data-type="episode">episodes</button>
+            </div>
+        </div>
+
         <form id="search-form"  class="search-form">
             <input type="search" name="srch" class="search-inp" placeholder="Enter movie title..." required>
             <button form="search-form" class="search-btn">Search!</button>
         </form>
 
-        <div class="pagination">
-            <!-- <button class="prevPage page-btn">Prevoius page</button>
-            <button class="nextPage page-btn">Next page</button> -->
-        </div>
+        <div class="pagination"></div>
 
-        <ol class="results">
-        </ol>
+        <ol class="results"></ol>
+
+        <div class="movie-details"><button>&#10006;</button></div>
         
     </div>
     <script defer src="script.js"></script>
