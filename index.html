@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
@@ -10,27 +11,40 @@
 
     <div class="container">
 
-        <div class="search-type">
-            <p class="optional">Check one type (optional)</p>
-
-            <div class="types">
-                <button class="type-btn" data-type="movie">movies</button>
-                <button class="type-btn" data-type="series">series</button>
-                <button class="type-btn" data-type="episode">episodes</button>
-            </div>
-        </div>
-
         <form id="search-form"  class="search-form">
             <input type="search" name="srch" class="search-inp" placeholder="Enter movie title..." required>
+
+            <select class="type-select" name="type" id="type">
+                <option value="" selected>Type</option>
+                <option value="movie">Movies</option>
+                <option value="series">Series</option>
+                <option value="episode">Episodes</option>
+            </select>
+
             <button form="search-form" class="search-btn">Search!</button>
+
         </form>
+
+        <button class="show-fav">Favourites</button>
+
+        <hr>
 
         <div class="pagination"></div>
 
+        <hr>
+
         <ol class="results"></ol>
 
-        <div class="movie-details"><button>&#10006;</button></div>
+        <hr>
+
+        <div class="movie-details"></div>
         
+    </div>
+
+    <div class="favourites">
+        <p class="fav">Favourites  	<span class="star">&#9733;</span> <button class="clear">Clear</button></p>
+        <hr>
+        <div class="fav-movies"></div>
     </div>
     <script defer src="script.js"></script>
 </body>
