@@ -1,0 +1,147 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.table {
+  padding: 1% 5% 0;
+  margin: 0 auto;
+  background: -o-linear-gradient(315deg, #627d4d 0%, #1f3b08 100%);
+  background: linear-gradient(135deg, #627d4d 0%, #1f3b08 100%);
+  position: relative;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fill, 125px);
+}
+
+.card {
+  width: 125px;
+  height: 175px;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+}
+
+.front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-size: 100px;
+}
+
+.front::before {
+  position: absolute;
+  top: 5px;
+  right: 7px;
+  font-size: 35px;
+  content: attr(data-symbol);
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  background-repeat: no-repeat;
+  background-size: 60px 55px;
+  padding-bottom: 60px;
+  width: 50px;
+}
+
+.front::after {
+  position: absolute;
+  bottom: 5px;
+  left: 7px;
+  font-size: 35px;
+  -webkit-transform: rotateX(180deg);
+          transform: rotateX(180deg);
+  content: attr(data-symbol);
+  background-repeat: no-repeat;
+  background-size: 60px 55px;
+  padding-bottom: 60px;
+  width: 50px;
+}
+
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.back img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.black {
+  color: black;
+}
+
+.red {
+  color: #FF5368;
+}
+
+.spades {
+  background-image: url("../assets/spades.svg");
+  background-position: -60% 50%;
+}
+
+.diamonds {
+  background-image: url("../assets/diamonds.svg");
+  background-position: 48% 84%;
+}
+
+.clubs {
+  background-image: url("../assets/clubs.svg");
+  background-position: 166% 52%;
+}
+
+.hearts {
+  background-image: url("../assets/hearts.svg");
+  background-position: 44% 10%;
+}
+
+.clubs::before,
+.clubs::after {
+  background-image: url("../assets/clubs.svg");
+  background-position: 0% 50%;
+}
+
+.spades::before,
+.spades::after {
+  background-image: url("../assets/spades.svg");
+  background-position: 330% 50%;
+}
+
+.hearts::before,
+.hearts::after {
+  background-image: url("../assets/hearts.svg");
+  background-position: 160% 6%;
+}
+
+.diamonds::before,
+.diamonds::after {
+  background-image: url("../assets/diamonds.svg");
+  background-position: 170% 80%;
+}
+
+.flip {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  -webkit-transition: -webkit-transform .7s;
+  transition: -webkit-transform .7s;
+  -o-transition: transform .7s;
+  transition: transform .7s;
+  transition: transform .7s, -webkit-transform .7s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.card:hover .flip {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
