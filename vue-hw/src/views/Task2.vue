@@ -1,11 +1,9 @@
 <template>
-    <div class="field" v-on:click="showOptions">
-        <div class="container" ref="cont">
-            <button v-on:click.prevent="mouseBtn" v-on:contextmenu.prevent="mouseBtn" type="button">What button you clicked?</button>
-            <button v-on:click="currentTime" type="button">What time is it?</button>
-            <p ref="mesg" class="message">{{msg}}</p>
-            <a href="/">TASK 1</a>
-        </div>
+    <div class="container">
+        <ol>
+            <li class="item" v-for="lnk in links" :key="lnk"><a v-bind:href="lnk.link" v-bind:title="lnk.title" target="_blank">{{lnk.name}}</a></li>
+        </ol>
+        <a href="/">TASK 1</a>
     </div>
 </template>
 
@@ -13,73 +11,61 @@
 export default {
     data() {
         return {
-            msg: "",
-            time: new Date()
+            links: [
+                {
+                    name: 'facebook',
+                    title: 'facebook',
+                    link: 'https://www.facebook.com/'
+                },
+
+                {
+                    name: 'twitter',
+                    title: 'twitter',
+                    link: 'https://www.twitter.com/'
+                },
+
+                {
+                    name: 'beetroot',
+                    title: 'beetroot academy',
+                    link: 'https://beetroot.academy/'
+                },
+
+                {
+                    name: 'dribbble',
+                    title: 'dribbble',
+                    link: 'https://dribbble.com/'
+                }
+            ]
         }
-    },
-
-    methods: {
-
-        showOptions() {
-            this.$refs.cont.style.display = "block"
-        },
-
-        mouseBtn() {  
-            this.msg = "";
-
-            if(event.which === 1) {
-                this.msg = "You clicked LMB!"
-            }
-            
-            if(event.which === 3) {
-                this.msg = 'You clicked RMB!';
-            }
-        },
-
-    currentTime() {
-        this.msg = this.time;
     }
 
-    }
 }
 </script>
 
 <style scoped>
 
-    .field {
-        width: 100%;
-        height: 100%;
-    }
-
     .container {
-        padding-top: 20px;
-        margin: 10% auto;
-        width: 350px;
-        height: 175px;
-        outline: 2px solid black;
-        text-align: center;
-        font-size: 20px;
-        background-color: whitesmoke;
-        display: none;
+        margin: 10% auto 0;
+        width: 200px;
+        height: 200px;
     }
 
-    button {
-        background: linear-gradient(135deg, #fefcea 0%,#f1da36 100%);
-        border-radius: 5px;
-        outline: none;
-        display: block;
-        margin: 0 auto;
+    ol {
+        border: 2px solid white;
+        border-radius: 15px;
+        padding: 10% 20%;
+        margin-bottom: 20px;
+    }
+
+    li {
         margin-bottom: 10px;
-        width: 170px;
     }
 
-    .message {
-        border: 1px solid silver;
-        border-radius: 25px;
-        width: 345px;
-        height: 25px;
-        margin: 0 auto;
-        margin-bottom: 25px;
+    a {
+        color: yellow;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: 0.7px;
     }
 
 </style>

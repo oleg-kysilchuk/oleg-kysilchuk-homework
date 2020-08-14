@@ -3,8 +3,7 @@
         <p class="text"> Enter some color from rainbow &#8595;</p>
         <input v-model="clr" type="text" placeholder="Your color..." required>
         <button type="submit">Change</button>
-        <p v-if="colors" class="result">Your color: <span v-bind:style="{ color: yourClr }">{{ yourClr }}</span></p>
-        <p v-else class="result">Error!</p>
+        <p class="result">Your color: <span v-bind:style="{ color: yourClr }">{{ yourClr }}</span></p>
         <a href="/task2">TASK 2</a>
     </form>
 </template>
