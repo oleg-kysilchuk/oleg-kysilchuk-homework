@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!----Fav Icon----->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+    <!----Slick Slider Styles---->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <!----Main CSS---->
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>New Restaurant</title>
+</head>
+<body>  
+
+        <div class="loading">
+            <div class="spinner">
+                <span class="spinner-animation"></span>
+            </div>
+        </div>
+        
+        
+        <!---navigation-->
+        <div class="nav-wrap">
+    <nav class="navigation">
+        <div class="navigation__logo">
+            <p>eatery <span>.</span> cafe</p>
+        </div>
+
+        <ul class="navigation__list">
+
+            <li class="navigation__item">
+                <a href="#home" class="navigation__link">home</a>
+            </li>
+
+            <li class="navigation__item">
+                <a href="#about" class="navigation__link">about</a>
+            </li>
+
+            <li class="navigation__item">
+                <a href="#team" class="navigation__link">chef</a>
+            </li>
+
+            <li class="navigation__item">
+                <a href="#menus" class="navigation__link">menu</a>
+            </li>
+
+            <li class="navigation__item">
+                <a href="#contact" class="navigation__link">contact</a>
+            </li>
+        </ul>
+
+        <div class="navigation__burger">
+            <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="bars" class="burger-icon" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512"><path fill="currentColor" d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"></path></svg>
+        </div>
+
+
+        <div class="navigation__reservation">
+            <a href="#" class="navigation__reservation__call">call now! 
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="phone-alt" class="call-icon" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512"><path fill="currentColor" d="M497.39 361.8l-112-48a24 24 0 0 0-28 6.9l-49.6 60.6A370.66 370.66 0 0 1 130.6 204.11l60.6-49.6a23.94 23.94 0 0 0 6.9-28l-48-112A24.16 24.16 0 0 0 122.6.61l-104 24A24 24 0 0 0 0 48c0 256.5 207.9 464 464 464a24 24 0 0 0 23.4-18.6l24-104a24.29 24.29 0 0 0-14.01-27.6z"></path></svg>
+                 010 020 0340
+            </a>
+            <a href="#contact" class="navigation__reservation__reserv-link">Reserve a table</a>
+        </div>
+        
+    </nav>
+</div>
+
+
+<!---mobile navigation-->
+
+<div class="mobile-nav">
+    <div class="mobile-nav__links">
+        <a href="#home" class="mobile-nav__link">home</a>
+
+        <a href="#about" class="mobile-nav__link">about</a>
+        
+        <a href="#team" class="mobile-nav__link">chef</a>
+
+        <a href="#menus" class="mobile-nav__link">menu</a>
+
+        <a href="#contact" class="mobile-nav__link">contact</a>
+
+        <a href="#contact" class="mobile-nav__link mobile-reservation">Reserve a table</a>
+    </div>
+</div>
+                                                        <!------HEADER------>
+        <!----slider---->
+        <header class="page-header" id="home">
+
+    <div class="header-slider">
+
+        <div class="header-slider__slide slide01">
+            <div class="header-slider__slide__content">
+                <h3 class="header-slider__slide__subtext">eatery cafe &amp; restaurant</h3>
+                <h1 class="header-slider__slide__text">Our mission is to provide an unforgettable experience</h1>
+                <a href="#team" class="header-slider__slide__slide-btn chef-link btn">Meet our chef</a>
+            </div>
+        </div>
+
+        <div class="header-slider__slide slide02">
+            <div class="header-slider__slide__content">
+                <h3 class="header-slider__slide__subtext">your perfect breakfast</h3>
+                <h1 class="header-slider__slide__text">The best dinning quality can be here too!</h1>
+                <a href="#menus" class="header-slider__slide__slide-btn menu-link btn">Discover menu</a>
+            </div>
+        </div>
+
+        <div class="header-slider__slide slide03">
+            <div class="header-slider__slide__content">
+                <h3 class="header-slider__slide__subtext">new restaurant in town</h3>
+                <h1 class="header-slider__slide__text">Enjoy our special menus every Sunday and Friday</h1>
+                <a href="#contact" class="header-slider__slide__slide-btn reservation-link btn">Reservation</a>
+            </div>
+        </div>
+
+        
+
+    </div>
+
+</header>
+
+
+        <!----About----->
+        <section class="about-us fade-in" id="about">
+
+    <div class="about">
+
+        <div class="about__text">
+
+            <h4 class="about__text__subtitle">Read our story</h4>
+
+            <h2 class="about__text__title">We've been Making The Delicious Foods Since 1999</h2>
+            
+            <p class="about__text__description">Fusce hendrerit malesuada lacinia. Donec semper semper sem vitae malesuada. Proin scelerisque risus et ipsum semper molestie sed in nisi. Ut rhoncus congue lectus, rhoncus venenatis leo malesuada id.</p>
+
+            <p class="about__text__description">Sed elementum vel felis sed scelerisque. In arcu diam, sollicitudin eu nibh ac, posuere tristique magna. You can use this template for your cafe or restaurant website. Please tell your friends about us. Thank you.</p>
+
+        </div>
+
+        <div class="about__picture">
+            <img src="./assets/about.jpg" alt="about">
+        </div>
+
+    </div>    
+
+</section>
+
+
+        <!----Our Team----->
+        <section class="team fade-in" id="team">
+
+    <div class="our-team">
+
+        <h2 class="our-team__title">Meet our chefs</h2>
+        <h4 class="our-team__subtitle">they are nice & friendly</h4>
+
+        <div class="our-team__members">
+
+            <div class="our-team__member mem01">
+                
+                <div class="our-team__member__photo">
+                    <div class="our-team__member__photo-wrap">
+                        <img src="./assets/team-member01.jpg" alt="team member">
+                    </div>
+
+                    <div class="our-team__member__social">
+                        <div class="our-team__member__social-box">
+                            <h4 class="our-team__member__desc">Repudiandae eaque quibusdam dolor vel nulla!</h4>
+                            <ul>
+                                <li class="our-team__member__item">
+                                    <a href="https://www.twitter.com" class="our-team__member__link" target="_blank">
+                                        <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" class="icon twitter" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512"><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg>
+                                    </a>
+                                </li>
+
+                                <li class="our-team__member__item">
+                                    <a href="https://www.google.com/account/about" class="our-team__member__link" target="_blank">
+                                        <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="google" class="icon google" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 488 512"><path fill="currentColor" d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"></path></svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="our-team__member__info">
+                    <h4 class="our-team__member__name">new catherine</h4>
+                    <p class="our-team__member__pos">kitchen officer</p>
+                </div>
+            </div>
+
+            <div class="our-team__member mem02">
+                
+                <div class="our-team__member__photo">
+                    <div class="our-team__member__photo-wrap">
+                        <img src="./assets/team-member02.jpg" alt="team member">
+                    </div>
+
+                    <div class="our-team__member__social">
+                        <div class="our-team__member__social-box">
+                            <h4 class="our-team__member__desc">Accusamus a veniam consectetur error rerum!</h4>
+                            <ul>
+                                <li class="our-team__member__item">
+                                    <a href="https://www.instagram.com" class="our-team__member__link" target="_blank">
+                                        <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram" class="icon instagram" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512"><path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>
+                                    </a>
+                                </li>
+
+                                <li class="our-team__member__item">
+                                    <a href="https://www.facebook.com" class="our-team__member__link" target="_blank">
+                                        <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-square" class="icon facebook" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512"><path fill="currentColor" d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z"></path></svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="our-team__member__info">
+                    <h4 class="our-team__member__name">lindsay perlen</h4>
+                    <p class="our-team__member__pos">owner & manager</p>
+                </div>
+            </div>
+
+            <div class="our-team__member mem03">
+                
+                <div class="our-team__member__photo">
+                    <div class="our-team__member__photo-wrap">
+                        <img src="./assets/team-member03.jpg" alt="team member">
+                    </div>
+
+                    <div class="our-team__member__social">
+                        <div class="our-team__member__social-box">
+                            <h4 class="our-team__member__desc">Placeat perspiciatis adipisci reiciendis mollitia!</h4>
+                            <ul>
+                                <li class="our-team__member__item">
+                                    <a href="https://www.google.com/account/about" class="our-team__member__link" target="_blank">
+                                        <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="google" class="icon google" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 488 512"><path fill="currentColor" d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"></path></svg>
+                                    </a>
+                                </li>
+
+                                <li class="our-team__member__item">
+                                    <a href="https://www.instagram.com" class="our-team__member__link" target="_blank">
+                                        <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram" class="icon instagram" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512"><path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="our-team__member__info">
+                    <h4 class="our-team__member__name">isabella grace</h4>
+                    <p class="our-team__member__pos">pizza specialist</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+        <!----Menus----->
+        <section class="menus" id="menus">
+
+    <div class="gallery">
+
+        <div class="fade-in">
+            <h2 class="gallery__title">Our menus</h2>
+            <h4 class="gallery__subtitle">tea time & dining</h4>
+        </div>
+
+        <div class="gallery__menu">
+
+            <div class="gallery__menu__item">
+                <div class="gallery__menu__item__wrap">
+                    <img class="gal-img" src="./assets/menu-img01.jpg" alt="dish">
+
+                    <div class="gallery__menu__info">
+                        <div class="gallery__menu__dish">
+                             <h3 class="gallery__menu__title">american breakfast</h3>
+                             <p class="gallery__menu__tags">eggs / sausages / tomatos</p>
+                        </div>
+                        <div class="gallery__menu__price">
+                             <span>$22</span>
+                        </div>
+                   </div>
+                </div>
+            </div>
+
+            <div class="gallery__menu__item">
+                <div class="gallery__menu__item__wrap">
+                    <img class="gal-img" src="./assets/menu-img02.jpg" alt="dish">
+
+                    <div class="gallery__menu__info">
+                        <div class="gallery__menu__dish">
+                             <h3 class="gallery__menu__title">self-made salad</h3>
+                             <p class="gallery__menu__tags">green / vegetables / healthy</p>
+                        </div>
+                        <div class="gallery__menu__price">
+                             <span>$18</span>
+                        </div>
+                   </div>
+                </div>
+            </div>
+
+            <div class="gallery__menu__item">
+                <div class="gallery__menu__item__wrap">
+                    <img class="gal-img" src="./assets/menu-img03.jpg" alt="dish">
+
+                    <div class="gallery__menu__info">
+                        <div class="gallery__menu__dish">
+                             <h3 class="gallery__menu__title">chinese noodle</h3>
+                             <p class="gallery__menu__tags">chicken / vegetables / pepper</p>
+                        </div>
+                        <div class="gallery__menu__price">
+                             <span>$32</span>
+                        </div>
+                   </div>
+                </div>
+            </div>
+
+            <div class="gallery__menu__item">
+                <div class="gallery__menu__item__wrap">
+                    <img class="gal-img" src="./assets/menu-img04.jpg" alt="dish">
+
+                    <div class="gallery__menu__info">
+                        <div class="gallery__menu__dish">
+                             <h3 class="gallery__menu__title">rice soup</h3>
+                             <p class="gallery__menu__tags">green / chicken</p>
+                        </div>
+                        <div class="gallery__menu__price">
+                             <span>$25</span>
+                        </div>
+                   </div>
+                </div>
+            </div>
+
+            <div class="gallery__menu__item">
+                <div class="gallery__menu__item__wrap">
+                    <img class="gal-img" src="./assets/menu-img05.jpg" alt="dish">
+
+                    <div class="gallery__menu__info">
+                        <div class="gallery__menu__dish">
+                             <h3 class="gallery__menu__title">deli burger</h3>
+                             <p class="gallery__menu__tags">beef / fried potatoes</p>
+                        </div>
+                        <div class="gallery__menu__price">
+                             <span>$38</span>
+                        </div>
+                   </div>
+                </div>
+            </div>
+
+            <div class="gallery__menu__item">
+                <div class="gallery__menu__item__wrap">
+                    <img class="gal-img" src="./assets/menu-img06.jpg" alt="dish">
+
+                    <div class="gallery__menu__info">
+                        <div class="gallery__menu__dish">
+                             <h3 class="gallery__menu__title">italian pasta</h3>
+                             <p class="gallery__menu__tags">cheese / green / pasta</p>
+                        </div>
+                        <div class="gallery__menu__price">
+                             <span>$18</span>
+                        </div>
+                   </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+        
+
+        <!----Testimonials----->
+        <section class="testimonials">
+
+    <h2 class="testimonials__heading fade-in">testimonials</h2>
+
+    <div class="testimonials-slider fade-in">
+
+        <div class="testimonials-slider__slide">
+            <div class="tst-slide-wrap">
+                <div class="testimonials-slider__slide__content">
+
+                    <p class="testimonials-slider__slide__message">Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Maecenas faucibus mollis interdum ullamcorper nulla non.</p>
+
+                    <h4 class="testimonials-slider__slide__author">Digital Carlson
+                        <span class="testimonials-slider__slide__text">Pharetra quam sit amet</span>
+                    </h4> 
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="testimonials-slider__slide">
+            <div class="tst-slide-wrap">
+                <div class="testimonials-slider__slide__content">
+
+                    <p class="testimonials-slider__slide__message">Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Sed vestibulum orci quam.</p>
+
+                    <h4 class="testimonials-slider__slide__author">Johnny Stephen
+                        <span class="testimonials-slider__slide__text">Magna nisi porta ligula</span>
+                    </h4>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="testimonials-slider__slide">
+            <div class="tst-slide-wrap">
+                <div class="testimonials-slider__slide__content">
+
+                    <p class="testimonials-slider__slide__message">Vivamus aliquet felis eu diam ultricies congue. Morbi porta lorem nec consectetur porta quis dui elit habitant morbi.</p>
+
+                    <h4 class="testimonials-slider__slide__author">Jessie White 
+                        <span class="testimonials-slider__slide__text">Vitae lacinia augue urna quis</span>
+                    </h4>
+                    
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+        <!------Contact------->
+        <section class="contact-us fade-in" id="contact">
+
+    <div class="contact-map" id="map"></div>
+
+
+    <div class="form-container fade-in">
+
+        <h2 class="form-container__title">contact us</h2>
+
+        <form action="#" method="GET" id="cont-us-form" class="contact-form">
+
+            <input class="contact-form__name" type="text" name="name" id="name" maxlength="40" pattern="^[a-zA-Z]+( [a-zA-Z]+)*$" placeholder="Full name" required>
+
+            <input class="contact-form__email" type="email" name="email" id="email" placeholder="Email address" required>
+
+            <input class="contact-form__subject" type="text" name="subject" id="subject" maxlength="33" placeholder="Subject" required>
+
+            <textarea class="contact-form__message" name="message" id="message" rows="6" maxlength="200" placeholder="Tell about your project" required></textarea>
+
+            <button class="contact-form__submit-btn btn" type="submit" form="cont-us-form">send message</button>
+
+        </form>
+
+    </div>
+
+</section>
+
+
+        <!------Footer------->
+        <footer class="page-footer">
+
+    <div class="info-block find-us fade-in">
+        <h2 class="info-block__title find-us__title">find us</h2>
+        <address class="info-block__text find-us__text">
+            123 nulla a cursus rhoncus,<br>
+            augue sem viverra 10870<br>
+            id ultricies sapien
+        </address>
+    </div>
+
+    <div class="info-block reservation fade-in">
+        <h2 class="info-block__title reservation__title">reservation</h2>
+        <address class="info-block__text reservation__text">
+            090-080-0650 | 090-070-0430<br>
+            info@company.com<br>
+            LINE: eatery247
+        </address>
+    </div>
+
+    <div class="info-block open-hours fade-in">
+        <h2 class="info-block__title open-hours__title">open hours</h2>
+        <div class="info-block__text open-hours__text">
+            <p class="open-hours__closed">Monday: Closed</p>
+            <p class="open-hours__opened"><strong>Tuesday to Friday</strong><br>
+                7:00 AM - 9:00 PM
+            </p>
+            <p class="open-hours__weekend"><strong>Saturday - Sunday</strong><br>
+                11:00 AM - 10:00 PM
+            </p>
+        </div>
+    </div>
+
+    <div class="info-block social fade-in">
+        <div class="social__links">
+
+            <a href="https://www.facebook.com" class="social__link" target="_blank">
+                <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="facebook-square" class="icon facebook" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512"><path fill="currentColor" d="M400 32H48A48 48 0 0 0 0 80v352a48 48 0 0 0 48 48h137.25V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.27c-30.81 0-40.42 19.12-40.42 38.73V256h68.78l-11 71.69h-57.78V480H400a48 48 0 0 0 48-48V80a48 48 0 0 0-48-48z"></path></svg>
+            </a>
+
+            <a href="https://www.twitter.com" class="social__link" target="_blank">
+                <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="twitter" class="icon twitter" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 512 512"><path fill="currentColor" d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"></path></svg>
+            </a>
+
+            <a href="https://www.instagram.com" class="social__link" target="_blank">
+                <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="instagram" class="icon instagram" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 448 512"><path fill="currentColor" d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"></path></svg>
+            </a>
+
+            <a href="https://www.google.com/account/about" class="social__link" target="_blank">
+                <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="google" class="icon google" role="img" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 488 512"><path fill="currentColor" d="M488 261.8C488 403.3 391.1 504 248 504 110.8 504 0 393.2 0 256S110.8 8 248 8c66.8 0 123 24.5 166.3 64.9l-67.5 64.9C258.5 52.6 94.3 116.6 94.3 256c0 86.5 69.1 156.6 153.7 156.6 98.2 0 135-70.4 140.8-106.9H248v-85.3h236.1c2.3 12.7 3.9 24.9 3.9 41.4z"></path></svg>
+            </a>
+
+        </div>
+
+        <p class="info-block__text">
+            Copyright © 2045<br>
+            Your Company Name<br><br>
+            Design: TemplateMo
+        </p>
+    </div>
+
+</footer>
+
+
+        
+        
+        
+        <!-----jQuery----->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <!-----Slick------->
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <!-----MainScript----->
+        <script defer src="./script/script.min.js"></script>
+        <!-----Google-Map------>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDgclrR8QqACLDYcgLjsLd1RIZV9-V8Bpc&_=1592332435797&language=en&callback=initMap"></script>
+</body>
+</html>

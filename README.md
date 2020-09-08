@@ -1,2 +1,1 @@
-# oleg-kysilchuk-homework
-homework/beetroot
+diploma work
